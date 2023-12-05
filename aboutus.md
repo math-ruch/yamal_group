@@ -14,5 +14,5 @@ Welcome on our WebPage for this ADA course 2023-2024! Our team YAMAL is an acron
 
 For this project we decided to work on the CMU movie dataset as we are film nerds 
 <p align="center">
-  <img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="300" height="150" alt="Wizards Cap">
+  <img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="300" height="150" alt="Wizards Cap", style="vertical-align:middle;margin:15px">
 </p>
