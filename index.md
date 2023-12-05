@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Wizardry of Good Movies
-subtitle: Analysis of various factors that lead to high box office revenue
+subtitle: Analysis of magic spells that lead to high box office revenue
 cover-img: /assets/img/movie.png
 thumbnail-img: /assets/img/movie.png
 share-img: /assets/img/movie.png
@@ -16,30 +16,39 @@ The most expensive film ever produced is Star Wars: The Force Awakens, costing a
 
 ## 1. Is there a relationship between the movies' release country and its ratings?
 
+...
 -----------------
 
 ## 2. What is the relationship between a movies' genre and its success?
 
+...
 -----------------
 
 ## 3. Does the period of release of a movie have an impact on its box office revenue?
 
+...
 -----------------
 
 ## 4. What aspects of the movies' cast influence its success?
 
+...
 -----------------
 
 ## 5. Are longer movies more likely to be more successful?
 
+...
 -----------------
 
 ## 6. Are movies with higher budgets more successful?
 
+...
 -----------------
 
 ## 7. what is the relationship between a movies reviews from critics and it’s success?
 
+...
 -----------------
 
 ## Conclusion
+
+...
