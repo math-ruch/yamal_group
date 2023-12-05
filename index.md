@@ -2,7 +2,7 @@
 layout: page
 title: The Wizardry of Good Movies
 subtitle: Analysis of magic spells that lead to high box office revenue
-cover-img: /assets/img/movie.png
+cover-img: "https://www.destructoid.com/wp-content/uploads/2023/09/Wizardry-PGMO_keyart_nologo.jpg"
 thumbnail-img: /assets/img/movie.png
 share-img: /assets/img/movie.png
 use-site-title: true
