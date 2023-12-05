@@ -22,7 +22,7 @@ author: Youssef Izellalen, Anas Hakim, Mathieu Ruch, Amine Belghmi, Luc Harrison
 navbar-links:
   Resources:
     - Dataset CMU: "http://www.cs.cmu.edu/~ark/personas/"
-    - Dataset TMDB:
+    - Dataset TMDB: "https://www.kaggle.com/datasets/kakarlaramcharan/tmdb-data-0920"
   About Me: "aboutme"
 
 ################
