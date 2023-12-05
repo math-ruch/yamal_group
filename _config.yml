@@ -21,7 +21,8 @@ author: Youssef Izellalen, Anas Hakim, Mathieu Ruch, Amine Belghmi, Luc Harrison
 
 navbar-links:
   Resources:
-    - The dataset: "http://www.cs.cmu.edu/~ark/personas/"
+    - Dataset CMU: "http://www.cs.cmu.edu/~ark/personas/"
+    - Dataset TMDB:
   About Me: "aboutme"
 
 ################
