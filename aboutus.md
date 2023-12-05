@@ -14,5 +14,5 @@ Welcome on our web page for this ADA course 2023-2024! The name of our team YAMA
 
 For this project we decided to work on the CMU movie dataset as we are film nerds 
 <p align="center">
-  <img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="300" height="150" alt="Wizards Cap", style="vertical-align:middle;margin:0px">
+  <img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="300" height="150" alt="Wizards Cap">
 </p>
