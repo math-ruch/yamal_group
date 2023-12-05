@@ -4,7 +4,7 @@ title: About us
 subtitle: Concerning YAMAL Team
 ---
 
-Welcome on our WebPage for this ADA course 2023-2024! Our team YAMAL is an acronym of the names of our team members:
+Welcome on our web page for this ADA course 2023-2024! The name of our team YAMAL is an acronym of the names of the different team members:
 
 - Youssef Izellalen
 - Anas Hakim
@@ -14,5 +14,5 @@ Welcome on our WebPage for this ADA course 2023-2024! Our team YAMAL is an acron
 
 For this project we decided to work on the CMU movie dataset as we are film nerds 
 <p align="center">
-  <img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="300" height="150" alt="Wizards Cap", style="vertical-align:middle;margin:15px">
+  <img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="300" height="150" alt="Wizards Cap", style="vertical-align:middle;margin:0px">
 </p>
