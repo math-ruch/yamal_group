@@ -13,4 +13,4 @@ Welcome on our WebPage for this ADA course 2023-2024! Our team YAMAL is an acron
 - Luc Harrison
 
 For this project we decided to work on the CMU movie dataset as we are film nerds 
-<img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="50" height="50" alt="Wizards Cap">
+<img src="https://emojis.wiki/thumbs/emojis/nerd-face.webp" width="100" height="50" alt="Wizards Cap">
