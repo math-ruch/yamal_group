@@ -23,7 +23,7 @@ navbar-links:
   Resources:
     - Dataset CMU: "http://www.cs.cmu.edu/~ark/personas/"
     - Dataset TMDB: "https://www.kaggle.com/datasets/kakarlaramcharan/tmdb-data-0920"
-  About Me: "aboutme"
+  About Us: "aboutus"
 
 ################
 # --- Logo --- #
