@@ -21,8 +21,7 @@ regard to the box office revenue.
 Blablabla
 
 Blablabla
-
-<iframe src="https%3A%2F%2Fnews.mit.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fnews_article__image_gallery%2Fpublic%2Fimages%2F201003%2F20100315144150-1_0.jpg%3Fitok%3DxksoTT8q&tbnid=Fb_w8aExDVFILM&vet=12ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-..i&imgrefurl=https%3A%2F%2Fnews.mit.edu%2F2010%2Fexplained-reg-analysis-0316&docid=tQatzh8dt3mxrM&w=800&h=600&q=regression&ved=2ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-)" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<img src="https%3A%2F%2Fnews.mit.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fnews_article__image_gallery%2Fpublic%2Fimages%2F201003%2F20100315144150-1_0.jpg%3Fitok%3DxksoTT8q&tbnid=Fb_w8aExDVFILM&vet=12ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-..i&imgrefurl=https%3A%2F%2Fnews.mit.edu%2F2010%2Fexplained-reg-analysis-0316&docid=tQatzh8dt3mxrM&w=800&h=600&q=regression&ved=2ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-)" height=600px width=720px class="center"/>
 
 -----------------
 
