@@ -14,6 +14,9 @@ The most expensive film ever produced is Star Wars: The Force Awakens, costing a
 
 -----------------
 
+## Accounting for inflation
+As you can see from the following histogram, our dataset consists of a large variety of movies ranging from the end of the 19th century to nowadays. Since one of the goals of our study is to explore relationships between the box office revenue of a movie and other factors and without adjusting for inflation, the box office revenues of older movies may seem significantly lower than those of recent movies. Therefore, to make a fair comparison, we had to  adjust all box office revenues and all budgets for inflation.
+<img src="https%3A%2F%2Fnews.mit.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fnews_article__image_gallery%2Fpublic%2Fimages%2F201003%2F20100315144150-1_0.jpg%3Fitok%3DxksoTT8q&tbnid=Fb_w8aExDVFILM&vet=12ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-..i&imgrefurl=https%3A%2F%2Fnews.mit.edu%2F2010%2Fexplained-reg-analysis-0316&docid=tQatzh8dt3mxrM&w=800&h=600&q=regression&ved=2ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-)" height=600px width=720px class="center"/>
 ## 1. Is there a relationship between the movies' release country and its ratings?
 
 Example of paragraph here. In this part we wish to understand the links of movies with their produciton countries  with
