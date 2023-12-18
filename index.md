@@ -65,11 +65,11 @@ Since we only wanted to consider blockbuster movies, we had to define what a blo
 
 We then conduct a weighted degree centrality analysis on our graphs for each of the past five decades and sort the actors by their centrality measure, hoping that would give us some insights and some cool stuff to tell you . Let’s see what we get !
 
-<button onclick="changeImage()">Changer Image</button>
+<button onclick="changeImage()">Next decade</button>
 <iframe id="image" src="assets/actors_1970_1979.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 <script>
-var images = ["assetsactors_1970_1979.html", "assets/actors_1980_1989.html", "assets/actors_1990_1999.html"];
+var images = ["assetsactors_1970_1979.html", "assets/actors_1980_1989.html", "assets/actors_1990_1999.html", "assetsactors_2000_2009.html", "assetsactors_2010_2019.html"];
 var currentImage = 0;
 
 function changeImage() {
