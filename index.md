@@ -55,17 +55,42 @@ But we are not dumb because we took the ADA class ! Our analysis so far has been
 Maybe let us modify a little bit the treatment assignment definition and re define the treatment by “having two or more Oscar nominated actors in your casting” and let us redo the exact same study to see if it changes anything. When re-doing the study, we are again separating the movies between a treatment and a control group where the treatment group consists of movies who have more than a single Oscar nominated actor in their cast. And guess what ? this time we got a 0 p-value and non-overlapping confidence intervals suggesting that having two or more Oscar nominated actors in your cast will really increase your chances of performing well in the box office !
 <iframe src="assets/box_office_revenue_comparison_after_sec_matching.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
-## 5. Are longer movies more likely to be more successful?
+## Who were the most important actors during the past five decades ?
+
+Do you feel like you're always seeing the same actors, such as Brad Pitt, Emma Watson, and Robert De Niro, when you go watch blockbusters to the movies? Are certain actors more prominently featured in such films? This is what we are gonna explore, so let’s get started. 
+
+We are going to run a little graph study to explore the links between actors. To do so, we are going to consider the set of actors as a social network where each node is an actor and where two actors are connected to each other if and only if they played together in a movie, then the strenght of the link between the two actors will be the mean of the box office revenues of the movies they played together.
+
+Since we only wanted to consider blockbuster movies, we had to define what a blockbuster is. For this purpose, we only selected movies with box office revenues greater or equal to 90% of all other movies of our dataset. 
+
+We then conduct a weighted degree centrality analysis on our graphs for each of the past five decades and sort the actors by their centrality measure, hoping that would give us some insights and some cool stuff to tell you . Let’s see what we get !
+
+<button onclick="changeImage()">Changer Image</button>
+<img id="image" src="assets/actors_1970_1979.html" />
+
+<script>
+var images = ["assetsactors_1970_1979.html", "assets/actors_1980_1989.html", "assets/actors_1990_1999.html"];
+var currentImage = 0;
+
+function changeImage() {
+    currentImage++;
+    if (currentImage >= images.length) currentImage = 0;
+    document.getElementById('image').src = images[currentImage];
+}
+</script>
+
+
+## 6. Are longer movies more likely to be more successful?
 
 ...
 -----------------
 
-## 6. Are movies with higher budgets more successful?
+## 7. Are movies with higher budgets more successful?
 
 ...
 -----------------
 
-## 7. what is the relationship between a movies reviews from critics and it’s success?
+## 8. what is the relationship between a movies reviews from critics and it’s success?
 
 ...
 -----------------
