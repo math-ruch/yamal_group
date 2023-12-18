@@ -66,7 +66,7 @@ Since we only wanted to consider blockbuster movies, we had to define what a blo
 We then conduct a weighted degree centrality analysis on our graphs for each of the past five decades and sort the actors by their centrality measure, hoping that would give us some insights and some cool stuff to tell you . Let’s see what we get !
 
 <button onclick="changeImage()">Changer Image</button>
-<img id="image" src="assets/actors_1970_1979.html" />
+<iframe id="image" src="assets/actors_1970_1979.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 <script>
 var images = ["assetsactors_1970_1979.html", "assets/actors_1980_1989.html", "assets/actors_1990_1999.html"];
@@ -79,6 +79,44 @@ function changeImage() {
 }
 </script>
 
+### The seventies : a deceny marked by an emblematic movie, The godfather.
+Joe Spinell, Talia Shire, James Caan, Marlon Brando, Richard Bright, Diane Keaton, Al Pacino, Robert Duvall, John Cazale and  Peter Donat, these are the 10 most emblematic actors of the seventies. You may ask yourself what do all these actors have in common ? did they perform singularly each in a movie or do they have a common movie that kind of boosted their carreer. Well, just by having a quick look at their wikipedia page, we found out that 8 out of theim : Marlon Brando, Al Pacino, James Caan, Robert Duvall, John Cazale, Diane Keaton, Talia Shire, and Richard Bright all appeared in "The Godfather" (1972) directed by Francis Ford Coppola.
+
+### The Eighties: The Era of "Star Wars" and "Back to the Future"
+
+Again the eighties top actors fall into two groups :
+
+The Star Wars cast where : 
+Harrison Ford played Han Solo.
+Billy Dee Williams portrayed Lando Calrissian.
+Carrie Fisher was famous for her role as Princess Leia.
+James Earl Jones provided the voice for Darth Vader.
+Frank Oz voiced Yoda.
+Mark Hamill starred as Luke Skywalker.
+
+and the Back to the future cast where :
+Christopher Lloyd played Dr. Emmett "Doc" Brown.
+James Tolkan was known for his role as Mr. Strickland.
+Frances Lee McCain played Stella Baines, Lorraine's mother.
+
+### The early twenty first century : The era of fantasy movies
+The early 21st century actors are known for their roles in iconic film series, like Harry Potter or the Lord of the rings which are celebrated for bringing the magical worlds of J.K. Rowling's and J.R.R. Tolkien's to life on the big screen.
+
+"Harry Potter" Series Connection:
+
+John Cleese played Nearly Headless Nick.
+Robbie Coltrane portrayed Rubeus Hagrid.
+Brendan Gleeson appeared as Alastor "Mad-Eye" Moody.
+Gary Oldman was Sirius Black.
+Alan Rickman played Severus Snape.
+Warwick Davis took on multiple roles, including Professor Flitwick and Griphook.
+Maggie Smith starred as Professor Minerva McGonagall.
+
+"The Lord of the Rings" / "The Hobbit" Series Connection:
+
+Hugo Weaving played Elrond.
+Orlando Bloom portrayed Legolas.
+Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the Mouth of Sauron (extended edition).
 
 ## 6. Are longer movies more likely to be more successful?
 
