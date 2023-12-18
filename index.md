@@ -69,7 +69,7 @@ We then conduct a weighted degree centrality analysis on our graphs for each of 
 <iframe id="image" src="assets/actors_1970_1979.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 
 <script>
-var images = ["assetsactors_1970_1979.html", "assets/actors_1980_1989.html", "assets/actors_1990_1999.html", "assetsactors_2000_2009.html", "assetsactors_2010_2019.html"];
+var images = ["assets/actors_1970_1979.html", "assets/actors_1980_1989.html", "assets/actors_1990_1999.html", "assets/actors_2000_2009.html", "assets/actors_2010_2019.html"];
 var currentImage = 0;
 
 function changeImage() {
