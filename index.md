@@ -17,7 +17,8 @@ The most expensive film ever produced is Star Wars: The Force Awakens, costing a
 ## Accounting for inflation
 As you can see from the following histogram, our dataset consists of a large variety of movies ranging from the end of the 19th century to nowadays. Since one of the goals of our study is to explore relationships between the box office revenue of a movie and other factors and without adjusting for inflation, the box office revenues of older movies may seem significantly lower than those of recent movies. Therefore, to make a fair comparison, we had to  adjust all box office revenues and all budgets for inflation.
 <iframe src="assets/movie_release_year_hist.png" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-
+The adjust for inflation is done using the consumer price index formula : 
+\text{Adjusted Value} = \text{Original Value} \times \frac{\text{CPI in the Original Year}}{\text{CPI in the Current Year (2021)}}
 ## 1. Is there a relationship between the movies' release country and its ratings?
 
 Example of paragraph here. In this part we wish to understand the links of movies with their produciton countries  with
