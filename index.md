@@ -10,7 +10,7 @@ use-site-title: true
 
 ## Abstract
 
-The most expensive film ever produced is Star Wars: The Force Awakens, costing an estimated 447 million $ , but it ended up being a huge financial success grossing over 2 billion $. What explains this success? One could think that obvious features such as the budget of the film are the main contributors to its success, but this is not always the case. In fact, many other factors influence the success of the film. Our aim is to explore the connection between the films' success (which we measure by its user ratings and revenue when we have enough data) and various less obvious factors such as the gender of the cast, where the film was released etc. Our analysis will aim to find out which factors are the most important and play an important role in contributing to a movies' success.
+The most expensive film ever produced is Star Wars: The Force Awakens, costing an estimated 447 million $ , but it ended up being a huge financial success grossing over 2 billion $. What explains this success? One could think that obvious features such as the budget of the film are the main contributors to its success, but this is not always the case. In fact, many other factors influence the success of the film. Our aim is to explore the connection between the films' success (which we measure by its revenue when we have enough data) and various less obvious factors such as the gender of the cast, the sentiment expressed in the plot etc. Our analysis will aim to find out which factors are the most important and play an important role in contributing to a movies' success.
 
 -----------------
 
