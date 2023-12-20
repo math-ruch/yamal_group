@@ -30,13 +30,13 @@ Now that we have our budgets and box office revenues adjusted for inflation, let
 
 The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example:
 
-"<span style="color:green">*I got up in a good mood. I had an excellent breakfast.*</span> <span style="color:red">*Unfortunately, I realised that I'd have to do the washing-up afterwards.*</span>"
+*"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span> <span style="color:red">Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"*
 
 The first two sentences in green are labelled as positive because of their positive score assigned by our analyser and the last one in red is considered as negative.
 Then all plots with a proportion of sentences associated with a sentiment greater than 50% are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot would be considered negative. In the case of our previous example, the text would be labelled as positive because it contains two thirds of positive sentences. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
 Let's look at the result of this processing by visualising the number of films with dots appearing in each of the emotional categories for different genres:
 
-<iframe id="image" src="assets/plot_count.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
+<iframe id="image" src="assets/plot_count.html" width="750px" height="700px" frameborder="0" position="relative">Display plot counts</iframe>
 
 However, in the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues on the conclusion of our analysis as the two genres may not have similar distributions of box office revenues. 
  
