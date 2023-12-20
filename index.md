@@ -42,8 +42,14 @@ However, in the case of observational analyses, we have to take account of impor
  
 The same applies to budgets: it is obvious that if we consider the money generated as output, we must care about the money at the input i.e. the budget as the later has probably a big impact on the revenues. A movie with a higher budget will generally reach a bigger audience (higher budget means it will probably lead to a greater marketing, be translated into more languages, have better special effect...) and consequently generate a higher box office revenue.
 
-Pour se défaire de cet impitoyable ennemi, nous avons effectué du matching. In our analysis, we select the same number of movies with an emotional plot as with a non-emotional plot for each genre. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget, so we will match movies whose diffence in budget is not more than 20% of the smallest budget between the two i.e. $\text{abs}(\text{budget movie}_1 - \text{budget movie}_2) < 0.2*min(\text{budget movie}_1, \text{budget movie}_2)$
+To get rid of this merciless enemy, we did some matching. In our analysis, we select the same number of movies with an emotional plot as with a non-emotional plot for each genre. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget, so we will match movies whose diffence in budget is not more than 20% of the smallest budget between the two i.e. $\text{abs}(\text{budget movie}_1 - \text{budget movie}_2) < 0.2*min(\text{budget movie}_1, \text{budget movie}_2)$
 
+
+But what about the results of our analysis? Here they are:
+
+- For our first question on the link between box office income and plot emotionality (whether they are neutral or emotional) it turns out that, against all expectations, there is no statistically significant difference (significance level of 0.05) between the box office averages of the two categories! In fact, by performing a t-test between the two averages, we can see that the p-value is below the significance threshold. As can also be seen in the figure below, the 95% confidence intervals overlap considerably. We might have expected the emotion ingredient in the film plot to contribute to the potion of success. But because of the low p-value, we cannot refute the hypothesis that the two averages are similar.
+  
+- Regarding our second question, if the plot is considered to be emotional, it turns out that this time there is a statistically significant difference between the box office revenues of the films in the positive plot.
 
 -----------------
 
