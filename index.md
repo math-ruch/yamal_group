@@ -20,7 +20,7 @@ Along this analysis, we wish to look at movies from different angles, using a wh
 As you can see from the following histogram, our dataset consists of a large variety of movies ranging from the end of the 19th century to nowadays. Since one of the goals of our study is to explore relationships between the box office revenue of a movie and other factors and without adjusting for inflation, the box office revenues of older movies may seem significantly lower than those of recent movies. Therefore, to make a fair comparison, we had to  adjust all box office revenues and all budgets for inflation.
 <iframe src="assets/movie_release_year_hist.png" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 The adjust for inflation is done using the consumer price index formula : 
-$ \text{Adjusted Value} = \text{Original Value} \times \frac{\text{CPI in the Original Year}}{\text{CPI in the Current Year (2021)}} $
+$\text{Adjusted Value} = \text{Original Value} \times \frac{\text{CPI in the Original Year}}{\text{CPI in the Current Year (2021)}}$
 <iframe src="assets/inflation-plot.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 Now that we have our budgets and box office revenues adjusted for inflation, let’s dive in our dataset and see what we can extract from it !
 
@@ -30,11 +30,20 @@ Now that we have our budgets and box office revenues adjusted for inflation, let
 
 The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example:
 
-"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span> <span style="color:red"> Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"
+"<span style="color:green">*I got up in a good mood. I had an excellent breakfast.*</span> <span style="color:red">*Unfortunately, I realised that I'd have to do the washing-up afterwards.*</span>"
 
 The first two sentences in green are labelled as positive because of their positive score assigned by our analyser and the last one in red is considered as negative.
 Then all plots with a proportion of sentences associated with a sentiment greater than 50% are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot would be considered negative. In the case of our previous example, the text would be labelled as positive because it contains two thirds of positive sentences. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
 Let's look at the result of this processing by visualising the number of films with dots appearing in each of the emotional categories for different genres:
+
+Figure
+
+However, in the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues on the conclusion of our analysis as the two genres may not have similar distributions of box office revenues. 
+ 
+The same applies to budgets: it is obvious that if we consider the money generated as output, we must care about the money at the input i.e. the budget as the later has probably a big impact on the revenues. A movie with a higher budget will generally reach a bigger audience (higher budget means it will probably lead to a greater marketing, be translated into more languages, have better special effect...) and consequently generate a higher box office revenue.
+
+Pour se défaire de cet impitoyable ennemi, nous avons effectué du matching. In our analysis, we select the same number of movies with an emotional plot as with a non-emotional plot for each genre. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget, so we will match movies whose diffence in budget is not more than 20% of the smallest budget between the two i.e. $\text{abs}(\text{budget movie}_1 - \text{budget movie}_2) < 0.2*min(\text{budget movie}_1, \text{budget movie}_2)$
+
 
 -----------------
 
