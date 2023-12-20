@@ -34,7 +34,7 @@ For each film we tokenised its plot and labelled the sentences in the plot as be
 
 *"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span> <span style="color:red">Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"*
 
-The first two sentences are labelled as positive and therefore coloured in green because of their positive score assigned by our sentiment analyser and the last sentence in red is considered as negative.
+The first two sentences are labelled as positive and therefore coloured in green because of their positive score assigned by our sentiment analyser. On the contrary, the last sentence in red is labelled as negative by the analyser.
 Then all plots with a proportion of sentences associated with a sentiment greater than 50% are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot would be considered negative. In the case of our previous example, the text would be labelled as positive because it contains two thirds of positive sentences. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
 Let's look at the result of this processing by visualising the number of films with dots appearing in each of the emotional categories for different genres:
 
