@@ -34,15 +34,16 @@ For each film we tokenised its plot and labelled the sentences in the plot as be
 
 *"<span style="color:green">I got up in a good mood. I had a good night. I had an excellent breakfast.</span> <span style="color:red">Unfortunately, I realised that I'd have to do the washing-up afterwards.</span><span style="color:blue"> I would have liked to use a dishwasher"</span>*
 
-The first three sentences are labelled as positive because of their positive score assigned by our sentiment analyser. Therefore they are coloured in green. On the contrary, the forth sentence in red is labelled as negative by the analyser and the last one is considered as neutral. This is why they appear in red and blue respectively.
+The first three sentences are labelled as positive because of their positive score assigned by our sentiment analyser. Therefore they are coloured in green. On the contrary, the forth sentence in red is labelled as negative by the analyser and the last one is considered as neutral. This is why they appear in red and blue, respectively.
 
 Then we classified plots as follows. All plots containing more than 50% sentences associated with a particular sentiment are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot will be considered negative. In the case of our previous example, the text would be labelled as positive because it contains three of positive sentences over five. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
 Let's look at the result of this processing by visualising the number of films with plots appearing in each of the emotional categories for different genres:
 
 <iframe id="image" src="assets/math_plot_count.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
 Now that the data is available, we can ask our research questions to address them:
-**1)** Firstly, are films with emotional plots (positive or negative) more successful than films with neutral plots in terms of box office revenue?
-**2)** Secondly, focusing on movies with emotional plot, what emotion (between positive and negative) in the plot makes the movie more successful?
+
+- **1)** Firstly, are films with emotional plots (positive or negative) more successful than films with neutral plots in terms of box office revenue?
+- **2)** Secondly, focusing on movies with emotional plot, what emotion (between positive and negative) in the plot makes the movie more successful?
 
 A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
 
