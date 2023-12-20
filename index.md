@@ -12,6 +12,9 @@ use-site-title: true
 
 The most expensive film ever produced is Star Wars: The Force Awakens, costing an estimated 447 million $ , but it ended up being a huge financial success grossing over 2 billion $. What explains this success? One could think that obvious features such as the budget of the film are the main contributors to its success, but this is not always the case. In fact, many other factors influence the success of the film. Our aim is to explore the connection between the films' success (which we measure by its revenue when we have enough data) and various less obvious factors such as the gender of the cast, the sentiment expressed in the plot etc. Our analysis will aim to find out which factors are the most important and play an important role in contributing to a movies' success.
 
+
+Along this analysis, we wish to look at movies from different angles, using a whole range of data analysis tools. On our journey we will be using regression, NLP and sentiment analysis, graphs, to make sure to discover all little secrets hiding behind movies success. Let us now delve into the magic behind the success of movies to understand the composition of the magic potion that leads a film to a high box office revenue. But first, we must process a little bit the data before exploiting them. Indeed, certain values of our dataset need a small update.
+
 -----------------
 
 ## Accounting for inflation
@@ -21,14 +24,14 @@ The adjust for inflation is done using the consumer price index formula :
 $ \text{Adjusted Value} = \text{Original Value} \times \frac{\text{CPI in the Original Year}}{\text{CPI in the Current Year (2021)}} $
 <iframe src="assets/inflation-plot.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
 Now that we have our budgets and box office revenues adjusted for inflation, let’s dive in our dataset and see what we can extract from it !
-## 1. Is there a relationship between the movies' release country and its ratings?
 
-Example of paragraph here. In this part we wish to understand the links of movies with their produciton countries  with
-regard to the box office revenue.
-Blablabla
+-----------------
+## 1. Explore the relationship between movie plot sentiment and movie success
 
-Blablabla
-<img src="https%3A%2F%2Fnews.mit.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fnews_article__image_gallery%2Fpublic%2Fimages%2F201003%2F20100315144150-1_0.jpg%3Fitok%3DxksoTT8q&tbnid=Fb_w8aExDVFILM&vet=12ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-..i&imgrefurl=https%3A%2F%2Fnews.mit.edu%2F2010%2Fexplained-reg-analysis-0316&docid=tQatzh8dt3mxrM&w=800&h=600&q=regression&ved=2ahUKEwi27rfS-f2CAxXryrsIHWu8Bt4QMygFegQIARB-)" height=600px width=720px class="center"/>
+The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example:
+
+"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span>span style="color:red"> Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"
+
 
 -----------------
 
