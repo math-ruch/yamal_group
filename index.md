@@ -45,7 +45,7 @@ Now that the data is available, we can ask our research questions to address the
 - **1)** Firstly, are films with emotional plots (positive or negative) more successful than films with neutral plots in terms of box office revenue?
 - **2)** Secondly, focusing on movies with emotional plot, what emotion (between positive and negative) in the plot makes the movie more successful?
 
-A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
+A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would be the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
 
 <iframe id="image" src="assets/math_naive_exp.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
 Looking at the plot above we observe that in both cases, the confidence intervals of box office revenues are not overlapping whether looking to the left bar plots for question **1)** or to the right bar plots for question **2)**. In addition, the p-values of t-test are the following: 
