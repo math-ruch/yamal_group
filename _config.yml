@@ -23,6 +23,8 @@ navbar-links:
   Resources:
     - Dataset CMU: "http://www.cs.cmu.edu/~ark/personas/"
     - Dataset TMDB: "https://www.kaggle.com/datasets/kakarlaramcharan/tmdb-data-0920"
+    - Dataset Kaggle: "https://www.kaggle.com/datasets/varpit94/us-inflation-data-updated-till-may-2021"
+    
   About Us: "aboutus"
 
 ################
