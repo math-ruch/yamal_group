@@ -40,7 +40,21 @@ Then we classified plots as follows. All plots containing more than 50% sentence
 Let's look at the result of this processing by visualising the number of films with plots appearing in each of the emotional categories for different genres:
 
 <iframe id="image" src="assets/math_plot_count.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
-However, in the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues on the conclusion of our analysis as the two genres may not have similar distributions of box office revenues. 
+Now that the data is available, we can ask our research questions to address them:
+**1)** Firstly, are films with emotional plots (positive or negative) more successful than films with neutral plots in terms of box office revenue?
+**2)** Secondly, focusing on movies with emotional plot, what emotion (between positive and negative) in the plot makes the movie more successful?
+
+A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
+
+<iframe id="image" src="assets/math_naive_exp.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
+Looking at the plot above we observe that in both cases, the confidence intervals of box office revenues are not overlapping whether looking to the left bar plots for question **1)** or to the right bar plots for question **2)**. In addition, the p-values of t-test are the following: 
+
+- p-value = 0.0203 for question **1)** comparing mean box office revenues between emotional versus non-emotional plot
+- p-value = 2.07e-09 for question **2)** comparing mean box office revenues between positive and negative emotional plot
+
+So, in both cases the difference of mean box office revenues is statistically significant (at a significance level of 0.05) as both p-values are smaller than the significance level. For **1)**, if we look at the value of the t-statistic or simply observe the plot above, we can see that films with emotional plots have a higher average box office revenue than neutral plots! Thanks to the low p-value we can reject the fact that the mean box office are the same for both categories. This is the same for question **2)**. as the p-value is below 0.05 we can conclude that the difference of mean box office revenues is statistically significant between movies with negative emotional plot and positive ones. Films with negative emotional plots have a higher average box office revenue than neutral plot.
+
+But are those conclusion trustworthy? **No!** In the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues on the conclusion of our analysis as the two genres may not have similar distributions of box office revenues. 
  
 The same applies to budgets: it is obvious that if we consider the money generated as output, we must care about the money at the input i.e. the budget as the later has probably a big impact on the revenues. A movie with a higher budget will generally reach a bigger audience (higher budget means it will probably lead to a greater marketing, be translated into more languages, have better special effect...) and consequently generate a higher box office revenue.
 
