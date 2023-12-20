@@ -156,4 +156,4 @@ Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the 
 
 ## Wrap Up
 
-...
+Let us now quickly recap the main results of this analysis to be ready to produce good movie generating a looooooot of money.
