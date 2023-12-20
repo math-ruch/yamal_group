@@ -16,7 +16,6 @@ The most expensive film ever produced is Star Wars: The Force Awakens, costing a
 Along this analysis, we wish to look at movies from different angles, using a whole range of data analysis tools. On our journey we will be using regression, NLP and sentiment analysis, graphs, to make sure to discover all little secrets hiding behind movies success. Let us now delve into the magic behind the success of movies to understand the composition of the magic potion that leads a film to a high box office revenue. But first, we must process a little bit the data before exploiting them. Indeed, certain values of our dataset need a small update.
 
 -----------------
-
 ## Accounting for inflation
 As you can see from the following histogram, our dataset consists of a large variety of movies ranging from the end of the 19th century to nowadays. Since one of the goals of our study is to explore relationships between the box office revenue of a movie and other factors and without adjusting for inflation, the box office revenues of older movies may seem significantly lower than those of recent movies. Therefore, to make a fair comparison, we had to  adjust all box office revenues and all budgets for inflation.
 <iframe src="assets/movie_release_year_hist.png" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
@@ -26,12 +25,16 @@ $ \text{Adjusted Value} = \text{Original Value} \times \frac{\text{CPI in the Or
 Now that we have our budgets and box office revenues adjusted for inflation, let’s dive in our dataset and see what we can extract from it !
 
 -----------------
+
 ## 1. Explore the relationship between movie plot sentiment and movie success
 
 The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example:
 
-"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span>span style="color:red"> Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"
+"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span> <span style="color:red"> Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"
 
+The first two sentences in green are labelled as positive because of their positive score assigned by our analyser and the last one in red is considered as negative.
+Then all plots with a proportion of sentences associated with a sentiment greater than 50% are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot would be considered negative. In the case of our previous example, the text would be labelled as positive because it contains two thirds of positive sentences. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
+Let's look at the result of this processing by visualising the number of films with dots appearing in each of the emotional categories for different genres:
 
 -----------------
 
