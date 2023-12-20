@@ -28,11 +28,13 @@ Now that we have our budgets and box office revenues adjusted for inflation, let
 
 ## 1. Explore the relationship between movie plot sentiment and movie success
 
-The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example with this wise quote from Frank the wizard:
+The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
+
+For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example with this wise quote from Frank the wizard:
 
 *"<span style="color:green">I got up in a good mood. I had an excellent breakfast.</span> <span style="color:red">Unfortunately, I realised that I'd have to do the washing-up afterwards.</span>"*
 
-The first two sentences in green are labelled as positive because of their positive score assigned by our analyser and the last one in red is considered as negative.
+The first two sentences are labelled as positive and therefore coloured in green because of their positive score assigned by our sentiment analyser and the last sentence in red is considered as negative.
 Then all plots with a proportion of sentences associated with a sentiment greater than 50% are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot would be considered negative. In the case of our previous example, the text would be labelled as positive because it contains two thirds of positive sentences. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
 Let's look at the result of this processing by visualising the number of films with dots appearing in each of the emotional categories for different genres:
 
