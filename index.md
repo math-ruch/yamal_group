@@ -36,7 +36,7 @@ The first two sentences in green are labelled as positive because of their posit
 Then all plots with a proportion of sentences associated with a sentiment greater than 50% are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot would be considered negative. In the case of our previous example, the text would be labelled as positive because it contains two thirds of positive sentences. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
 Let's look at the result of this processing by visualising the number of films with dots appearing in each of the emotional categories for different genres:
 
-<iframe id="image" src="assets/plot_count.html" width="750px" height="700px" frameborder="0" position="relative">Display plot counts</iframe>
+<iframe id="image" src="assets/plot_count1.html" width="750px" height="700px" frameborder="0" position="relative">Display plot counts</iframe>
 
 However, in the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues on the conclusion of our analysis as the two genres may not have similar distributions of box office revenues. 
  
@@ -48,8 +48,12 @@ To get rid of this merciless enemy, we did some matching. In our analysis, we se
 But what about the results of our analysis? Here they are:
 
 - For our first question on the link between box office income and plot emotionality (whether they are neutral or emotional) it turns out that, against all expectations, there is no statistically significant difference (significance level of 0.05) between the box office averages of the two categories! In fact, by performing a t-test between the two averages, we can see that the p-value is below the significance threshold. As can also be seen in the figure below, the 95% confidence intervals overlap considerably. We might have expected the emotion ingredient in the film plot to contribute to the potion of success. But because of the low p-value, we cannot refute the hypothesis that the two averages are similar.
+
+<iframe id="image" src="assets/matched_is_plot_emotional_box_office.html" width="750px" height="700px" frameborder="0" position="relative">Plot matched exp1</iframe>
   
 - Regarding our second question, if the plot is considered to be emotional, it turns out that this time there is a statistically significant difference between the box office revenues of the films in the positive plot.
+
+<iframe id="image" src="assets/plot_class_box_office.html" width="750px" height="700px" frameborder="0" position="relative">Plot matched exp2</iframe>
 
 -----------------
 
