@@ -14,6 +14,7 @@ title: YAMAL Group
 
 # Your name to show in the footer
 author: Youssef Izellalen, Anas Hakim, Mathieu Ruch, Amine Belghmi, Luc Harrison
+markdown: kramdown
 
 ###############################################
 # --- List of links in the navigation bar --- #
