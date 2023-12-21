@@ -114,7 +114,7 @@ Our script transformed each month into a name, from the frosty whispers of Janua
 
 Following our statistical analysis, we now present a visual representation of the data that further illuminates our findings. The interactive graph below captures the essence of our results, emphasizing the temporal dimension of box office success.
 
-![Comparison of Monthly Box Office Revenues](path_to_image/monthly.html)
+![Comparison of Monthly Box Office Revenues](assets/monthly_analysis.html)
 
 **Figure 1**: This graph illustrates the t-statistic values for monthly box office revenues. A higher t-statistic indicates a month with significantly higher revenue compared to the rest of the year. As denoted by the standout gold bar, June emerges as the best month for movie releases, aligning with our earlier analysis. 
 
