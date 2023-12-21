@@ -163,7 +163,7 @@ Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the 
 
 ## 6. Are longer movies more likely to be more successful?
 
-<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
+<iframe id="image" src="assets/scatterplot_runtime_revenue" width="750px" height="530px" frameborder="0" position="relative">Scatter map</iframe>
 
 -----------------
 
