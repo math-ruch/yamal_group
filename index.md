@@ -179,7 +179,7 @@ Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the 
 
 ## 6. Are longer movies more likely to be more successful or are they just more boring to watch?
 
-<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="900" height="900" frameborder="0" position="relative">Scatter map</iframe>
+<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="1200" frameborder="0" position="relative">Scatter map</iframe>
 
 -----------------
 
