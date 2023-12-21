@@ -90,13 +90,44 @@ But what about the results of our analysis? Here they are:
 
 -----------------
 
-## 2. What is the relationship between a movies' genre and its success?
+### Section 2: Does the Period of Release of a Movie Have an Impact on Its Box Office Revenue?
+
+In the spellbinding realm of cinema, where stories unfold and captivate audiences, the success of a film is often attributed to myriad factors, ranging from its narrative depth to the star power it wields. Yet, beyond these obvious charms lies a more subtle, often overlooked element that can significantly sway a film's journey to prosperity: its release period. The date a movie graces the silver screen might seem inconsequential at first glance, but our analysis delves deep into the temporal mysteries to uncover its potential impact on box office revenue.
+
+Our initial foray into this enigmatic topic revealed a mild, though statistically significant, negative correlation between a movie's release year and its inflation-adjusted box office takings. This intriguing finding hints that the year of release, while not overwhelmingly dominant, does play a role in a film's financial outcome. However, to truly understand the nuances of this relationship, we must look beyond mere years and delve into the specifics of months and days.
+
+Imagine the calendar as a grand stage, with each month and day holding its unique potential for cinematic success. We seek to decode this complex schedule, asking questions of utmost importance to filmmakers and producers alike: **"What is the most favorable month to launch a film to maximize box office returns? Are certain days of the week more auspicious for premieres?"** This section of our story embarks on a data-driven quest to unravel the temporal keys to box office triumph, endeavoring to discover if a golden slot exists within the calendar's pages that beckons larger audiences and swells the coffers of the box office.
+
+Join us as we weave through the data, analyzing patterns and peculiarities, and perhaps, just perhaps, we'll uncover the hidden temporal magic that influences the financial success of movies. Whether it's the charm of holiday seasons, the allure of summer blockbusters, or the quiet appeal of off-peak releases, our story seeks to illuminate the subtle yet significant impact of release timing on a film's box office destiny. As we turn each page of the calendar, let's unveil the secrets held within the dates and determine if, indeed, the period of release holds the power to enchant audiences and fill the treasure chests of those who dare to dream in the world of cinema.
+
+#### Dissecting the Calendar: A Statistical Prelude
+As we delve into the enigmatic world of cinema, it's not just the storyline or star cast that carves the path to prosperity but also the strategic choice of the release date. To unveil this hidden influence, we embarked on a meticulous journey through data, beginning with an ANOVA test to dissect the year into months, each holding its own promise for cinematic success.
+
+With our analytical wands, we aggregated box office revenues by month and invoked the powers of the `f_oneway` function from `scipy.stats`. The incantation revealed a significant F-statistic of 25.655 and a p-value whispering the tale of a strong statistical difference in average box office revenues across various months. This was our first clue, suggesting that the timing of a film's release is more than just a date on the calendar; it's a strategic decision that can sway financial outcomes significantly.
+
+#### The Quest for the Optimal Release Month
+Armed with this knowledge, we embarked on a detailed examination of each month's individual impact on movie revenues. Employing pairwise T-Tests, we contrasted each month against the collective performance of others, unveiling a granular view of monthly trends. This wasn't just a comparison; it was a quest to identify the most auspicious times for filmmakers to release their creations.
+
+Our script transformed each month into a name, from the frosty whispers of January to the sun-kissed days of June, and everything in between. With each month mapped and data prepared, our T-Tests danced through the calendar, revealing the highs and lows of box office performance.
+
+### Visualizing Monthly Revenue Trends: Highlighting the Optimal Release Window
+
+Following our statistical analysis, we now present a visual representation of the data that further illuminates our findings. The interactive graph below captures the essence of our results, emphasizing the temporal dimension of box office success.
+
+![Comparison of Monthly Box Office Revenues](path_to_image/monthly.html)
+
+**Figure 1**: This graph illustrates the t-statistic values for monthly box office revenues. A higher t-statistic indicates a month with significantly higher revenue compared to the rest of the year. As denoted by the standout gold bar, June emerges as the best month for movie releases, aligning with our earlier analysis. 
+
+#### June and December: The Crowned Months of Cinema
+The analysis crowned June as the prime month for movie releases, its golden hues reflecting the sun-drenched days of summer vacations when audiences flock to theaters seeking escape and entertainment. December, with its festive allure, beckoned families and friends to share moments of joy and togetherness in the cozy embrace of cinema halls.
+
+These insights are more than mere observations; they are strategic tools for filmmakers and producers. Timing releases to coincide with major vacation periods can significantly enhance box office performance, turning a well-timed premiere into a financial triumph.
 
 
 
 -----------------
 
-## 3. Does the period of release of a movie have an impact on its box office revenue?
+## 3. What is the relationship between a movies' genre and its success?
 
 
 -----------------
