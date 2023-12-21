@@ -115,7 +115,7 @@ Our script transformed each month into a name, from the frosty whispers of Janua
 
 Following our statistical analysis, we now present a visual representation of the data that further illuminates our findings. The interactive graph below captures the essence of our results, emphasizing the temporal dimension of box office success.
 
-<iframe id="image" src="assets/monthly_analysis.html" width="900px" height="600px" frameborder="0" position="relative">Display plot counts</iframe>
+<iframe id="image" src="assets/monthly_analysis.html" width="1000px" height="500px" frameborder="0" position="relative">Display plot counts</iframe>
 
 **Figure 1**: This graph illustrates the t-statistic values for monthly box office revenues. A higher t-statistic indicates a month with significantly higher revenue compared to the rest of the year. As denoted by the standout gold bar, June emerges as the best month for movie releases, aligning with our earlier analysis. 
 
@@ -123,8 +123,6 @@ Following our statistical analysis, we now present a visual representation of th
 The analysis crowned June as the prime month for movie releases, its golden hues reflecting the sun-drenched days of summer vacations when audiences flock to theaters seeking escape and entertainment. December, with its festive allure, beckoned families and friends to share moments of joy and togetherness in the cozy embrace of cinema halls.
 
 These insights are more than mere observations; they are strategic tools for filmmakers and producers. Timing releases to coincide with major vacation periods can significantly enhance box office performance, turning a well-timed premiere into a financial triumph.
-
-
 
 -----------------
 
