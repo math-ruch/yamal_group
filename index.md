@@ -207,6 +207,7 @@ Hugo Weaving played Elrond.
 Orlando Bloom portrayed Legolas.
 Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the Mouth of Sauron (extended edition).
 
+Note however that as this analysis might give us good insights on the importance of actors for the past five decades, the way we construct our graph gives the same importance to all kinf of actors and secondary actors might be considered as important as primary ones. We could have had done a better analysis by giving more weights to primary actors to primary actors but we did lack of data in order to do so.
 ## 6. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 <iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="1200" frameborder="0" position="relative">Scatter map</iframe>
