@@ -100,29 +100,54 @@ Imagine the calendar as a grand stage, with each month and day holding its uniqu
 
 Join us as we weave through the data, analyzing patterns and peculiarities, and perhaps, just perhaps, we'll uncover the hidden temporal magic that influences the financial success of movies. Whether it's the charm of holiday seasons, the allure of summer blockbusters, or the quiet appeal of off-peak releases, our story seeks to illuminate the subtle yet significant impact of release timing on a film's box office destiny. As we turn each page of the calendar, let's unveil the secrets held within the dates and determine if, indeed, the period of release holds the power to enchant audiences and fill the treasure chests of those who dare to dream in the world of cinema.
 
-### Temporal Alchemy: The Relationship Between Release Months and Box Office Gold
+#### Temporal Alchemy: The Relationship Between Release Months and Box Office Gold
 
 As we delve into the enigmatic world of cinema, it's not just the storyline or star cast that carves the path to prosperity but also the strategic choice of the release date. To unveil this hidden influence, we embarked on a meticulous journey through data, beginning with an ANOVA test to dissect the year into months, each holding its own promise for cinematic success.
 
 With our analytical wands, we aggregated box office revenues by month and invoked the powers of the `f_oneway` function from `scipy.stats`. The incantation revealed a significant F-statistic of 25.655 and a p-value whispering the tale of a strong statistical difference in average box office revenues across various months. This was our first clue, suggesting that the timing of a film's release is more than just a date on the calendar; it's a strategic decision that can sway financial outcomes significantly.
 
-#### The Quest for the Optimal Release Month
+##### The Quest for the Optimal Release Month
 Armed with this knowledge, we embarked on a detailed examination of each month's individual impact on movie revenues. Employing pairwise T-Tests, we contrasted each month against the collective performance of others, unveiling a granular view of monthly trends. This wasn't just a comparison; it was a quest to identify the most auspicious times for filmmakers to release their creations.
 
 Our script transformed each month into a name, from the frosty whispers of January to the sun-kissed days of June, and everything in between. With each month mapped and data prepared, our T-Tests danced through the calendar, revealing the highs and lows of box office performance.
 
-### Visualizing Monthly Revenue Trends: Highlighting the Optimal Release Window
+##### Visualizing Monthly Revenue Trends: Highlighting the Optimal Release Window
 
 Following our statistical analysis, we now present a visual representation of the data that further illuminates our findings. The interactive graph below captures the essence of our results, emphasizing the temporal dimension of box office success.
 
-<iframe id="image" src="assets/monthly_analysis.html" width="1000px" height="500px" frameborder="0" position="relative">Display plot counts</iframe>
+<iframe id="image" src="assets/monthly_analysis.html" width="800px" height="400px" frameborder="0" position="relative">Display plot counts</iframe>
 
-**Figure 1**: This graph illustrates the t-statistic values for monthly box office revenues. A higher t-statistic indicates a month with significantly higher revenue compared to the rest of the year. As denoted by the standout gold bar, June emerges as the best month for movie releases, aligning with our earlier analysis. 
-
-#### June and December: The Crowned Months of Cinema
+##### June and December: The Crowned Months of Cinema
 The analysis crowned June as the prime month for movie releases, its golden hues reflecting the sun-drenched days of summer vacations when audiences flock to theaters seeking escape and entertainment. December, with its festive allure, beckoned families and friends to share moments of joy and togetherness in the cozy embrace of cinema halls.
 
 These insights are more than mere observations; they are strategic tools for filmmakers and producers. Timing releases to coincide with major vacation periods can significantly enhance box office performance, turning a well-timed premiere into a financial triumph.
+
+#### Daily Dynamics: The Impact of Weekdays on Box Office Revenues
+
+In the complex world of movie-making, the release date of a movie can be crucial to its success. Moving on from examining the impact of release months, we now narrow our focus to the days of the week. In this part of our analysis, we explore how the specific day a film is released may influence its performance at the box office for different genres.
+
+##### Understanding Box Office Performance: Weekday and Genre Analysis
+
+To understand how weekdays influence box office revenues, we first transformed the days of the week and movie genres into a numerical format. This transformation, known as one-hot encoding, allowed us to prepare the data for our analysis effectively. Next, we created a matrix showing the average box office revenue for each genre on every day of the week. This step was essential to identify potential patterns and determine which days might be more successful for different movie genres.
+
+Moving further, we aimed to find the best day for releasing films in each genre. For this, we used two methods: Random Forest regression models and analysis of the mean revenue. When the results from these two methods differed, we relied on the mean revenue analysis, as it reflected the historical box office performance more accurately. This comprehensive approach enabled us to suggest the most strategic days for movie releases based on genre-specific audience behaviors.
+
+##### Visualizing Box Office Trends: A Weekday and Genre Heatmap
+We created a heatmap to visually present our findings, turning complex data into an easily understandable color spectrum. This heatmap illustrates the average box office earnings for each genre on different weekdays. With just a glance, we could identify which days typically bring in higher revenues for each genre.
+
+We also added annotations to highlight the best days for releases. Where our Random Forest model and mean revenue analysis didn't agree, we marked the 'Best' day in red to indicate the discrepancy. This heatmap isn't just a simple chart; it's a comprehensive guide that helps us understand the patterns in box office earnings based on the day of the week and genre.
+
+<iframe id="heatmap" src="assets/daily_analysis.html" width="800px" height="500px" frameborder="0" position="relative">Display plot counts</iframe>
+
+##### The Daily Rhythm: Selecting the Best Release Days
+Our analysis showed that the success of a movie at the box office can vary significantly depending on the day it's released. Different genres tend to perform better on specific weekdays, suggesting an underlying pattern in audience behavior. By combining rigorous data analysis with industry knowledge, we've identified which days might offer the best chance for a film's successful release, providing a valuable guide for planning premiere dates.
+
+#### Conclusion: Deciphering the Temporal Impact on Box Office Success
+Our extensive exploration into the release timing of movies has revealed a complex yet discernible relationship between when a film is shown and its box office success. Initially, we observed subtle shifts in revenue patterns over time, suggesting changes in market dynamics and consumer behavior. Our further investigation into monthly trends identified June and December as standout periods for box office returns, likely due to the seasonal holidays that draw larger audiences to theaters.
+
+We didn't stop at broader trends; our study also delved into the daily dynamics influencing box office outcomes. Through numerical transformation of our data and the application of both Random Forest models and mean revenue analysis, we uncovered the weekdays that favor different movie genres. The heatmap created from our findings not only visualized these intricate patterns but also pinpointed the optimal release days, providing a strategic guide for film releases.
+
+In concluding our analysis, it's clear that the timing of a movie's release—spanning from the year to the specific day—significantly influences its commercial success. Our insights provide a valuable roadmap for industry professionals, indicating the best times to release films to maximize audience engagement and revenue. This comprehensive study not only illuminates the patterns behind cinematic success but also empowers filmmakers and distributors with actionable knowledge to strategically plan their premieres, ensuring that each film has the best opportunity to thrive in the competitive box office landscape.
 
 -----------------
 
