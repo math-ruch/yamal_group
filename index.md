@@ -91,7 +91,8 @@ But what about the results of our analysis? Here they are:
 
 ## 2. What is the relationship between a movies' genre and its success?
 
-...
+
+
 -----------------
 
 ## 3. Does the period of release of a movie have an impact on its box office revenue?
@@ -186,10 +187,6 @@ Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the 
 ...
 -----------------
 
-## 8. what is the relationship between a movies reviews from critics and it’s success?
-
-...
------------------
 
 ## Wrap Up
 
