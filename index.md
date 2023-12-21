@@ -177,7 +177,7 @@ Hugo Weaving played Elrond.
 Orlando Bloom portrayed Legolas.
 Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the Mouth of Sauron (extended edition).
 
-## 6. Are longer movies more likely to be more successful?
+## 6. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 <iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="750px" height="800px" frameborder="0" position="relative">Scatter map</iframe>
 
