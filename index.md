@@ -100,7 +100,8 @@ Imagine the calendar as a grand stage, with each month and day holding its uniqu
 
 Join us as we weave through the data, analyzing patterns and peculiarities, and perhaps, just perhaps, we'll uncover the hidden temporal magic that influences the financial success of movies. Whether it's the charm of holiday seasons, the allure of summer blockbusters, or the quiet appeal of off-peak releases, our story seeks to illuminate the subtle yet significant impact of release timing on a film's box office destiny. As we turn each page of the calendar, let's unveil the secrets held within the dates and determine if, indeed, the period of release holds the power to enchant audiences and fill the treasure chests of those who dare to dream in the world of cinema.
 
-#### Dissecting the Calendar: A Statistical Prelude
+### Temporal Alchemy: The Relationship Between Release Months and Box Office Gold
+
 As we delve into the enigmatic world of cinema, it's not just the storyline or star cast that carves the path to prosperity but also the strategic choice of the release date. To unveil this hidden influence, we embarked on a meticulous journey through data, beginning with an ANOVA test to dissect the year into months, each holding its own promise for cinematic success.
 
 With our analytical wands, we aggregated box office revenues by month and invoked the powers of the `f_oneway` function from `scipy.stats`. The incantation revealed a significant F-statistic of 25.655 and a p-value whispering the tale of a strong statistical difference in average box office revenues across various months. This was our first clue, suggesting that the timing of a film's release is more than just a date on the calendar; it's a strategic decision that can sway financial outcomes significantly.
@@ -114,7 +115,7 @@ Our script transformed each month into a name, from the frosty whispers of Janua
 
 Following our statistical analysis, we now present a visual representation of the data that further illuminates our findings. The interactive graph below captures the essence of our results, emphasizing the temporal dimension of box office success.
 
-![Comparison of Monthly Box Office Revenues](assets/monthly_analysis.html)
+<iframe id="image" src="assets/monthly_analysis.html" width="900px" height="600px" frameborder="0" position="relative">Display plot counts</iframe>
 
 **Figure 1**: This graph illustrates the t-statistic values for monthly box office revenues. A higher t-statistic indicates a month with significantly higher revenue compared to the rest of the year. As denoted by the standout gold bar, June emerges as the best month for movie releases, aligning with our earlier analysis. 
 
