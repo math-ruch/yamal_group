@@ -38,6 +38,7 @@ Where:
 - **CPI in Release Year**: The CPI of the year in which the movie was released.
 
 By applying this formula to both the box office revenue and the production budget, we can analyze the real financial performance and investment in movies on a comparable basis, regardless of their release year.
+
 -----------------
 
 ## 1. Explore the relationship between movie plot sentiment and movie success
