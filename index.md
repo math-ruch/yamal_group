@@ -16,13 +16,28 @@ The most expensive film ever produced is Star Wars: The Force Awakens, costing a
 Along this analysis, we wish to look at movies from different angles, using a whole range of data analysis tools. On our journey we will be using regression, NLP and sentiment analysis, graphs, to make sure to discover all little secrets hiding behind movies success. Let us now delve into the magic behind the success of movies to understand the composition of the magic potion that leads a film to a high box office revenue. But first, we must process a little bit the data before exploiting them. Indeed, certain values of our dataset need a small update.
 
 -----------------
-## Accounting for inflation
-As you can see from the following histogram, our dataset consists of a large variety of movies ranging from the end of the 19th century to nowadays. Since one of the goals of our study is to explore relationships between the box office revenue of a movie and other factors and without adjusting for inflation, the box office revenues of older movies may seem significantly lower than those of recent movies. Therefore, to make a fair comparison, we had to  adjust all box office revenues and all budgets for inflation.
-<iframe src="assets/movie_release_year_hist.png" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-The adjust for inflation is done using the consumer price index formula : 
-$\text{Adjusted Value} = \text{Original Value} \times \frac{\text{CPI in the Original Year}}{\text{CPI in the Current Year (2021)}}$
-<iframe src="assets/inflation-plot.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
-Now that we have our budgets and box office revenues adjusted for inflation, let’s dive in our dataset and see what we can extract from it !
+## Accounting for Inflation: Revenue and Budget
+
+In any analysis concerning financial figures over time, such as movie box office revenues and budgets, it's crucial to consider the impact of inflation. Inflation erodes the value of money over time, meaning that a movie's box office revenue or budget from decades ago doesn't hold the same value as today. To compare the financial performance and investment across different eras fairly, we adjust these figures for inflation, ensuring a like-for-like comparison.
+
+### Why Adjust for Inflation?
+
+Without accounting for inflation, we risk misinterpreting the financial success of older films or underestimating the scale of investment in past productions. A blockbuster from the 1980s, for instance, might have had a tremendous box office success in its day, but when compared to modern revenues without adjustment, it may seem less impressive. Similarly, the budget of an old classic, when adjusted for today's value, might reveal it as a more significant investment than initially perceived. Adjusting for inflation allows us to appreciate the real financial scale and success of movies across different periods.
+
+### Adjusting Box Office Revenue and Budget
+
+To normalize the box office revenue and budget figures, we use the Consumer Price Index (CPI), which provides a consistent measure to adjust values over time. The adjusted revenue and budget provide a more accurate reflection of a movie's financial success and the investment put into it, respectively. The formula for adjustment is as follows:
+
+![Equation](https://latex.codecogs.com/svg.image?\text{Adjusted&space;Value}=\text{Nominal&space;Value}\times\frac{\text{CPI&space;in&space;Target&space;Year}}{\text{CPI&space;in&space;Release&space;Year}})
+
+Where:
+
+- **Adjusted Value**: The revenue or budget value adjusted for inflation.
+- **Nominal Value**: The reported revenue or budget at the time of the movie's release.
+- **CPI in Target Year**: The CPI of the year to which we're adjusting the value (commonly the current year).
+- **CPI in Release Year**: The CPI of the year in which the movie was released.
+
+By applying this formula to both the box office revenue and the production budget, we can analyze the real financial performance and investment in movies on a comparable basis, regardless of their release year.
 
 -----------------
 
@@ -82,7 +97,7 @@ But what about the results of our analysis? Here they are:
 
 ## 3. Does the period of release of a movie have an impact on its box office revenue?
 
-...
+
 -----------------
 
 ## 4. Opting for a Single Oscar-Nominated Actor? No. Choosing Two or More? Yes.
