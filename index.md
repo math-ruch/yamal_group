@@ -135,7 +135,7 @@ In contrast, genres like Crime, Action, and Foreign exhibit relatively lower ROI
 
 ## 3. Explore the relationship between movie plot sentiment and movie success
 
-The last stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
+The third stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
 
 For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example with this wise quote from Frank the wizard:
 
