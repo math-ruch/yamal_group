@@ -272,3 +272,5 @@ But wait! Each genre might lead to different amounts of profit being made even i
 ## Wrap Up
 
 Let us now quickly recap the main results of this analysis to be ready to produce good movie generating a looooooot of money.
+
+From our last research question, it seems that there is no significant difference between the success of movies with emotional plot versus movies that have a non-emotional plot looking at the box office revenues. However, when movies plot starts to deal with emotions, it appears that movies with negative emotional plot encounter a greater success in terms of box office revenues than movies with positive emotional plot. So, when writing a plot, if you wish to increase your movie box office don’t forget to put negative emotions if the plot is emotional.
