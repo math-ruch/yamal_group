@@ -276,9 +276,9 @@ This underlines the nuanced role that timing plays on a movies success. As Ganda
 
 ## 6. Are movies with higher budgets more successful?
 Does investing more money into a film guarantee higher returns? Is this a myth or is this reality? A priori one would expect that investing more would correlate to higher box office revenues.
-By doing a linear regression we find that the R-squared values is 0.165 meaning that 16.5% of the variance in box office revenue is explained by the movies budget! And the coefficient associated with the budget is positive indicating that an increase in budget leads to a direct increase in movie revenue. The associated p-value is also close to 0 indicating that our results are statistically relevant.
+By doing a linear regression between the films budget and box office revenue, we find that the R-squared values is 0.165 meaning that 16.5% of the variance in box office revenue is explained by the movies budget! And the coefficient associated with the budget is positive indicating that an increase in budget leads to a direct increase in movie revenue. The associated p-value is also close to 0 indicating that our results are statistically relevant.
 
-In the midst of all of this, one could wonder how profit evolves. Do movies with higher budgets also have higher profits. Is this true? 
+In the midst of all of this, one could wonder how profit evolves as a function of the budget. Do movies with higher budgets also have higher profits? Is this true? 
 It sure looks like it! We have done a student test and found that the average profit for movies with high budgets (meaning a budget above 50$ million) was indeed higher than movies with low budgets and the p-value was close to 0 indicating that the result is again statistically significant. This makes sense since we would expect movies with bigger budgets to also bring in more money so even if they cost more, they should on average make more money overall than smaller movies.
 But wait! Each genre might lead to different amounts of profit being made even if the budget is the same! For example if you spend 80$ million on an action film or on a film about Frank the wizard, you are unlikely to yield the same net profit! To avoid this we have employed exact matching in order to mitigate the genres as a potential confounder.
 
