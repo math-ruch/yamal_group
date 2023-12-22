@@ -259,7 +259,7 @@ This underlines the nuanced role that timing plays on a movies success. As Ganda
 
 ## 7. Are movies with higher budgets more successful?
 Does investing more money into a film guarantee higher returns? Is this a myth or is this reality? A priori one would expect that investing more would correlate to higher box office revenues.
-By doing a linear regression we find that the R-squared values is 0.165 meaning that 16.5% of the variance in box office revenue is explained by the movies budget! And the coefficient associated with the budget is positive indicating that an increase in budget leads to a direct increase in movie revenue, the associated p-value is also close to 0 indicating that our results are statistically relevant and note simply invented like some magical soup in Asterix and Obelix.
+By doing a linear regression we find that the R-squared values is 0.165 meaning that 16.5% of the variance in box office revenue is explained by the movies budget! And the coefficient associated with the budget is positive indicating that an increase in budget leads to a direct increase in movie revenue. The associated p-value is also close to 0 indicating that our results are statistically relevant and not simply invented like some magical soup in Asterix and Obelix.
 
 One could also imagine that movies with higher budgets also have higher profits. Is this true? 
 It sure looks like it! We have done a student test and found that the average profit for movies with high budgets (meaning a budget above 40$ million) was indeed higher than movies with low budgets and the p-value was close to 0 indicating that the result is again statistically significant.
