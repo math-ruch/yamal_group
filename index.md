@@ -240,7 +240,7 @@ Movie runtime, measured in minutes is not simply the duration of a movie but als
 
 Starting off by looking at the scatter plot of movie runtimes and the movie revenues we might expect to see a clear relationship, but sadly we do not. But all hope is not lost! We will delve deeper into the analysis using statistical testing and linear regressions.
 
-<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="auto" frameborder="0" position="relative">Scatter map</iframe>
+<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="1000" frameborder="0" position="relative">Scatter map</iframe>
 
 ### Using the magical power of linear regressions we investigate this question further
 
