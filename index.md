@@ -43,7 +43,7 @@ By applying this formula to both the box office revenue and the production budge
 
 ## 1. Explore the relationship between movie plot sentiment and movie success
 
-The first stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
+The last stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
 
 For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example with this wise quote from Frank the wizard:
 
@@ -240,7 +240,7 @@ Movie runtime, measured in minutes is not simply the duration of a movie but als
 
 Starting off by looking at the scatter plot of movie runtimes and the movie revenues we might expect to see a clear relationship, but sadly we do not. But all hope is not lost! We will delve deeper into the analysis using statistical testing and linear regressions.
 
-<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="1000" frameborder="0" position="relative">Scatter map</iframe>
+<iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="850" frameborder="0" position="relative">Scatter map</iframe>
 
 ### Using the magical power of linear regressions we investigate this question further
 
