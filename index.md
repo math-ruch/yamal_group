@@ -244,7 +244,7 @@ Starting off by looking at the scatter plot of movie runtimes and the movie reve
 
 ### Using the magical power of linear regressions we investigate this question further
 
-Analysing our results we find an R-squared value of 3.1%, meaning that movie runtime explains almost no variance in the movie revenue and with a p-value close to 0 it looks like move runtime is a poor predictor of our movies success.
+Analysing the results of our linear regression we find an R-squared value of 3.1%, meaning that movie runtime explains almost no variance in the movie revenue and with a p-value close to 0 it looks like move runtime is a poor predictor of our movies success.
 
 Looking at our scatterplot above we notice that most movies are between 80 and 130 minutes in length, so does this mean that there is no difference no difference of success in block-buster (movies that have a revenue of over 400$ million) and non block-buster movies?
 
