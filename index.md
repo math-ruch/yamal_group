@@ -248,7 +248,7 @@ Analysing the results of our linear regression we find an R-squared value of 3.1
 
 When we are looking at continuous revenues, it appears that runtime does not explain well the variance in box office revenunes. But what about looking at 2 distinct revenue categories, do they have a significant difference in runtime? To accomplish this, we will be looking at block-buster movies (movies that have a revenue of over 400$ million) and non block-buster movies.
 
-Yes! By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
+By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
 
 Despite having a low value of R-squared between movie runtime and revenue we were able to expose a significant difference in movie runtimes between block-busters and non block-busters underlining the nuanced role that timing plays on a movies success. As Gandalf wisely said, "A wizard arrives precisely when he means to."
 
