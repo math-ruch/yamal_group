@@ -253,7 +253,7 @@ Note however that as this analysis might give us good insights on the importance
 ## 5. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 As Benjamin Franklin once said "Remember that time is money", but how does this apply to the world of movies? 
-Movie runtime, measured in minutes is not simply the duration of a movie but also an element that can affect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between movie runtime and it's box office revenue in order to gage the influence of the movies runtime on it's success. So without wasting any time let us continue!
+Movie runtime, measured in minutes is not simply the duration of a movie but also an element that can affect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between a movie's runtime and it's box office revenue in order to gage the influence of the duration of the movie on it's success. So without wasting any time let us continue!
 
 Starting off by looking at the scatter plot of movie runtimes and the movie revenues we might expect to see a clear relationship, but sadly we do not. But all hope is not lost! We will delve deeper into the analysis using statistical testing and linear regressions.
 
@@ -261,7 +261,7 @@ Starting off by looking at the scatter plot of movie runtimes and the movie reve
 
 ### Using the magical power of linear regressions we investigate this question further
 
-Analysing the results of our linear regression we find an R-squared value of 3.1%, meaning that movie runtime explains almost no variance in the movie revenue and with a p-value close to 0 it looks like move runtime is a poor predictor of our movies success.
+Analysing the results of our linear regression between movie runtime and box office revenue we find an R-squared value of 3.1%, meaning that movie runtime explains almost no variance in the movie revenue and with a p-value close to 0 it looks like move runtime is a poor predictor of our movies success.
 
 When we are looking at continuous revenues, it appears that runtime does not explain well the variance in box office revenunes. But what about looking at 2 distinct revenue categories, do they have a significant difference in runtime? To accomplish this, we will be looking at block-buster movies (movies that have a revenue of over 400$ million) and non block-buster movies.
 
