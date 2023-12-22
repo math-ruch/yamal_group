@@ -304,6 +304,6 @@ As far as the runtime analysis is concerned, we can conclude that although runti
 
 As for the budget, it does have a significant impact on a movie's revenue aswell as a movie's net profit. Therefore film studios can also expect to make more or less money depending on how much they are prepared to invest. However it is important to remember that without the correct balance of runtime, budget, genre distribution and many other factors it would be difficult to make a real blockbuster that would tear down the charts.
 
-Regarding the cast of your movie, you have better time engaging two or more oscar nominated actors because only having one won’t make the difference. Additionally, the conducted network analysis helped us discover that some movies like harry potter, the godfather, the lord of rings helped boosting the careers of some worldwide known actors
+Regarding the cast of your movie, it would be wiser to hire two or more oscar nominated actors because only having one won’t make the difference. Additionally, the conducted network analysis helped us uncover the fact that some movies like harry potter, the godfather, the lord of rings helped boost the careers of some worldwide known actors
 
 
