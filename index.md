@@ -263,7 +263,7 @@ By doing a linear regression we find that the R-squared values is 0.165 meaning 
 
 In the midst of all of this, one could wonder how profit evolves. Do movies with higher budgets also have higher profits. Is this true? 
 It sure looks like it! We have done a student test and found that the average profit for movies with high budgets (meaning a budget above 40$ million) was indeed higher than movies with low budgets and the p-value was close to 0 indicating that the result is again statistically significant.
-But wait! Each genre might lead to different amounts of profit being made even if the budget is the same! To avoid this we employed exact matching in order to mitigate the genres as a potential confounder.
+But wait! Each genre might lead to different amounts of profit being made even if the budget is the same! To avoid this we have employed exact matching in order to mitigate the genres as a potential confounder.
 
 # INSERT IMAGE HERE
 -----------------
