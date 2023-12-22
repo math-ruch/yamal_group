@@ -64,7 +64,7 @@ Now that the data is available, we can ask our research questions to address the
 
 A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would be the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
 
-<iframe id="image" src="assets/math_naive_exp.html" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
+<iframe id="image" src="" width="750px" height="530px" frameborder="0" position="relative">Display plot counts</iframe>
 Looking at the plot above we observe that in both cases, the confidence intervals of box office revenues are not overlapping whether looking to the left bar plots for question **1)** or to the right bar plots for question **2)**. In addition, the p-values of t-test are the following: 
 
 - p-value = 0.0202 for question **1)** comparing mean box office revenues between emotional versus non-emotional plot
@@ -84,9 +84,9 @@ But what about the results of our analysis? Here they are:
 
 - For question **1)** on the link between box office income and plot emotionality (whether they are neutral or emotional) it turns out that, against all expectations, there is no statistically significant difference (significance level of 0.05) between the box office averages of the two categories! In fact, by performing a t-test between the two averages, we can see that the p-value (0.402) is above the significance threshold. We also observe in the figure below that the 95% confidence intervals overlap considerably. We might have expected the emotion ingredient in movie plots to contribute to the potion of success. But because of the low p-value, we cannot refute the hypothesis that the two averages are similar unlike the naive analysis told us.
 
-<iframe id="image" src="assets/math_matched_exp1.html" width="750px" height="700px" frameborder="0" position="relative">Plot matched exp1</iframe>
+<iframe id="image" src="" width="750px" height="700px" frameborder="0" position="relative">Plot matched exp1</iframe>
 - Regarding question **2)**, if the plot is considered to be emotional, it turns out that this time we can reject the null hypothesis stating that the two sets of movies box office revenues have identical means (at a significance level of .05) as the p-value (0.0324) is below the significance level. Based on the t-statistic or on the plot below, we can say that the mean of box office revenues for movies with a negative emotional plot is higher. This is interesting to observe that films with negative emotional plot generally convey a greater success looking at the box office revenues. One would probably have thought that humans would be more sensitive to movies with positive emotional plot rather than negative emotional ones. *"The heart has its reasons which reason knows not."* to quote the famous french mathematician Blaise Pascal.
-<iframe id="image" src="assets/math_matched_exp2.html" width="750px" height="700px" frameborder="0" position="relative">Plot matched exp2</iframe>
+<iframe id="image" src="" width="750px" height="700px" frameborder="0" position="relative">Plot matched exp2</iframe>
 
 -----------------
 
