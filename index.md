@@ -263,7 +263,7 @@ Orlando Bloom portrayed Legolas.
 Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the Mouth of Sauron (extended edition).
 
 Note however that as this analysis might give us good insights on the importance of actors for the past five decades, the way we construct our graph gives the same importance to all kinf of actors and secondary actors might be considered as important as primary ones. We could have had done a better analysis by giving more weights to primary actors to primary actors but we did lack of data in order to do so.
-## 6. Are longer movies more likely to be more successful or are they just more boring to watch?
+## 5. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 As Benjamin Franklin once said "Remember that time is money", but how does this apply to the world of movies? 
 Movie runtime, measured in minutes is not simply the duration of a movie but also an element that can affect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between movie runtime and it's box office revenue in order to gage the influence of the movies runtime on it's success. So without wasting any time let us continue!
@@ -287,7 +287,7 @@ This underlines the nuanced role that timing plays on a movies success. As Ganda
 
 -----------------
 
-## 7. Are movies with higher budgets more successful?
+## 6. Are movies with higher budgets more successful?
 Does investing more money into a film guarantee higher returns? Is this a myth or is this reality? A priori one would expect that investing more would correlate to higher box office revenues.
 By doing a linear regression we find that the R-squared values is 0.165 meaning that 16.5% of the variance in box office revenue is explained by the movies budget! And the coefficient associated with the budget is positive indicating that an increase in budget leads to a direct increase in movie revenue. The associated p-value is also close to 0 indicating that our results are statistically relevant and not simply invented like some magical soup in Asterix and Obelix.
 
