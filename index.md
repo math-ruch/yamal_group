@@ -246,9 +246,9 @@ Starting off by looking at the scatter plot of movie runtimes and the movie reve
 
 Analysing the results of our linear regression we find an R-squared value of 3.1%, meaning that movie runtime explains almost no variance in the movie revenue and with a p-value close to 0 it looks like move runtime is a poor predictor of our movies success.
 
-Looking at our scatterplot above we notice that most movies are between 80 and 130 minutes in length, so does this mean that there is no difference no difference of success in block-buster (movies that have a revenue of over 400$ million) and non block-buster movies?
+When we are looking at continuous revenues, it appears that runtime does not explain well the variance in box office revenunes. But what about looking at 2 distinct revenue categories, do they have a significant difference in runtime? To accomplish this, we will be looking at block-buster movies (movies that have a revenue of over 400$ million) and non block-buster movies.
 
-No! By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
+Yes! By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
 
 Despite having a low value of R-squared between movie runtime and revenue we were able to expose a significant difference in movie runtimes between block-busters and non block-busters underlining the nuanced role that timing plays on a movies success. As Gandalf wisely said, "A wizard arrives precisely when he means to."
 
