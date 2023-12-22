@@ -210,45 +210,46 @@ function changeImage() {
 </script>
 
 ### The seventies : a deceny marked by an emblematic movie, The godfather.
-Joe Spinell, Talia Shire, James Caan, Marlon Brando, Richard Bright, Diane Keaton, Al Pacino, Robert Duvall, John Cazale and  Peter Donat, these are the 10 most emblematic actors of the seventies. You may ask yourself what do all these actors have in common ? did they perform singularly each in a movie or do they have a common movie that kind of boosted their carreer. Well, just by having a quick look at their wikipedia page, we found out that 8 out of theim : Marlon Brando, Al Pacino, James Caan, Robert Duvall, John Cazale, Diane Keaton, Talia Shire, and Richard Bright all appeared in "The Godfather" (1972) directed by Francis Ford Coppola.
+Joe Spinell, Talia Shire, James Caan, Marlon Brando, Richard Bright, Diane Keaton, Al Pacino, Robert Duvall, John Cazale and  Peter Donat, these are the 10 most emblematic actors of the seventies. You may ask yourself what do all these actors have in common ? did they perform singularly each in a movie or do they have a common movie that kind of boosted their carreer ?
+
+Well, just by having a quick look at their wikipedia page, we found out that 8 out of 10 : Marlon Brando, Al Pacino, James Caan, Robert Duvall, John Cazale, Diane Keaton, Talia Shire, and Richard Bright all appeared in "The Godfather" (1972) directed by Francis Ford Coppola.
 
 ### The Eighties: The Era of "Star Wars" and "Back to the Future"
 
 Again the eighties top actors fall into two groups :
 
 The Star Wars cast where : 
-Harrison Ford played Han Solo.
-Billy Dee Williams portrayed Lando Calrissian.
-Carrie Fisher was famous for her role as Princess Leia.
-James Earl Jones provided the voice for Darth Vader.
-Frank Oz voiced Yoda.
-Mark Hamill starred as Luke Skywalker.
+- Harrison Ford played Han Solo.
+- Billy Dee Williams portrayed Lando Calrissian.
+- Carrie Fisher was famous for her role as Princess Leia.
+- James Earl Jones provided the voice for Darth Vader.
+- Frank Oz voiced Yoda.
+- Mark Hamill starred as Luke Skywalker.
 
 and the Back to the future cast where :
-Christopher Lloyd played Dr. Emmett "Doc" Brown.
-James Tolkan was known for his role as Mr. Strickland.
-Frances Lee McCain played Stella Baines, Lorraine's mother.
+- Christopher Lloyd played Dr. Emmett "Doc" Brown.
+- James Tolkan was known for his role as Mr. Strickland.
+- Frances Lee McCain played Stella Baines, Lorraine's mother.
 
 ### The early twenty first century : The era of fantasy movies
 The early 21st century actors are known for their roles in iconic film series, like Harry Potter or the Lord of the rings which are celebrated for bringing the magical worlds of J.K. Rowling's and J.R.R. Tolkien's to life on the big screen.
 
 "Harry Potter" Series Connection:
-
-John Cleese played Nearly Headless Nick.
-Robbie Coltrane portrayed Rubeus Hagrid.
-Brendan Gleeson appeared as Alastor "Mad-Eye" Moody.
-Gary Oldman was Sirius Black.
-Alan Rickman played Severus Snape.
-Warwick Davis took on multiple roles, including Professor Flitwick and Griphook.
-Maggie Smith starred as Professor Minerva McGonagall.
+- John Cleese played Nearly Headless Nick.
+- Robbie Coltrane portrayed Rubeus Hagrid.
+- Brendan Gleeson appeared as Alastor "Mad-Eye" Moody.
+- Gary Oldman was Sirius Black.
+- Alan Rickman played Severus Snape.
+- Warwick Davis took on multiple roles, including Professor Flitwick and Griphook.
+- Maggie Smith starred as Professor Minerva McGonagall.
 
 "The Lord of the Rings" / "The Hobbit" Series Connection:
-
-Hugo Weaving played Elrond.
-Orlando Bloom portrayed Legolas.
-Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the Mouth of Sauron (extended edition).
+- Hugo Weaving played Elrond.
+- Orlando Bloom portrayed Legolas.
+- Bruce Spence appeared in "The Lord of the Rings: The Return of the King" as the Mouth of Sauron (extended edition).
 
 Note however that as this analysis might give us good insights on the importance of actors for the past five decades, the way we construct our graph gives the same importance to all kinf of actors and secondary actors might be considered as important as primary ones. We could have had done a better analysis by giving more weights to primary actors to primary actors but we did lack of data in order to do so.
+
 ## 5. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 As Benjamin Franklin once said "Remember that time is money", but how does this apply to the world of movies? 
