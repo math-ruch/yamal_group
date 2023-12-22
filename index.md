@@ -80,7 +80,7 @@ The same applies to budgets: it is obvious that if we consider the money generat
 
 To get rid of this merciless enemy, we did some matching. In our analysis, we select for each genre the same number of movies with an emotional plot as with a non-emotional plot for question **1)**. For question **2)** we also select for each genre the same number of movies with positive emotional plot as with negative plot. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget. So, we match movies between the treatment and the control group whose diffence in budget is not more than 20% of the smallest one i.e.:
 
-<img id="image" src="assets/equation.jpg" width="700px" height="40px" frameborder="0" position="relative">
+<img id="image" src="assets/equation.jpg" width="650px" height="30px" frameborder="0" position="relative">
 
 To compare the box office revenues distributions, we performed t-test as before.
 
