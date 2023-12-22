@@ -236,7 +236,7 @@ Note however that as this analysis might give us good insights on the importance
 ## 6. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 We often say that time is money, but how does this apply to the world of movies? 
-Runtime, the duration of a movie, measured in minutes is not simply the duration of a movie but also an element that can afect the audience's interest and attention. In this part we will investigae the relationship between movie runtime and it's box office revenue in order to gage it's success.
+Runtime, the duration of a movie, measured in minutes is not simply the duration of a movie but also an element that can afect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between movie runtime and it's box office revenue in order to gage the influence of the movies runtime on it's success. So without wasting any time let us continue!
 
 
 
