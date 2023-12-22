@@ -255,8 +255,9 @@ Despite having a low value of R-squared between movie runtime and revenue we wer
 -----------------
 
 ## 7. Are movies with higher budgets more successful?
+Does investing more money into a film guarantee higher returns? Is this a myth or is this reality? A priori one would expect that investing more would correlate to higher box office revenues.
+By doing a linear regression we find that the R-squared values is 0.165 meaning that 16.5% of the variance in box office revenue is explained by the movies budget! And the coefficient associated with the budget is positive indicating that an increase in budget leads to a direct increase in movie revenue, the associated p-value is also close to 0 indicating that our results are statistically relevant and note simply invented like some magical soup in Asterix and Obelix.
 
-...
 -----------------
 
 
