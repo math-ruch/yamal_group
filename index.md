@@ -250,7 +250,7 @@ When we are looking at continuous revenues, it appears that runtime does not exp
 
 By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
 
-<iframe id="image" src="assets/Mean_net_profit_budget.html" width="800" height="530" frameborder="0" position="relative">Scatter map</iframe>
+<iframe id="image" src="assets/Mean_runtime_blockbuster.html" width="800" height="530" frameborder="0" position="relative">Scatter map</iframe>
 
 Despite having a low value of R-squared between movie runtime and revenue we were able to expose a significant difference in movie runtimes between block-busters and non block-busters. 
 This underlines the nuanced role that timing plays on a movies success. As Gandalf wisely said, "A wizard arrives precisely when he means to."
@@ -265,7 +265,7 @@ In the midst of all of this, one could wonder how profit evolves. Do movies with
 It sure looks like it! We have done a student test and found that the average profit for movies with high budgets (meaning a budget above 40$ million) was indeed higher than movies with low budgets and the p-value was close to 0 indicating that the result is again statistically significant.
 But wait! Each genre might lead to different amounts of profit being made even if the budget is the same! To avoid this we have employed exact matching in order to mitigate the genres as a potential confounder.
 
-<iframe id="image" src="assets/Mean_runtime_blockbuster.html" width="800" height="530" frameborder="0" position="relative">Scatter map</iframe>
+<iframe id="image" src="assets/Mean_net_profit_budget.html" width="800" height="530" frameborder="0" position="relative">Scatter map</iframe>
 -----------------
 
 
