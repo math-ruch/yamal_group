@@ -238,10 +238,14 @@ Note however that as this analysis might give us good insights on the importance
 We often say that time is money, but how does this apply to the world of movies? 
 Movie runtime, measured in minutes is not simply the duration of a movie but also an element that can afect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between movie runtime and it's box office revenue in order to gage the influence of the movies runtime on it's success. So without wasting any time let us continue!
 
-Starting off by looking at the scatter plot of movie runtimes and the movie revenues, sadly we do not observe any clear dependancy between them. But all is not lost, we will delve deeper into the analysis using statistical testing and linear regressions. 
-
+Starting off by looking at the scatter plot of movie runtimes and the movie revenues we might expect to see a clear relationship, but sadly we do not. But all hope is not lost! We will delve deeper into the analysis using statistical testing and linear regressions. 
 
 <iframe id="image" src="assets/scatterplot_runtime_revenue.html" width="1200" height="1200" frameborder="0" position="relative">Scatter map</iframe>
+
+### Using the magical power of linear regressions we investigate this question further
+
+
+
 
 -----------------
 
