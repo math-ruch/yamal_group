@@ -250,7 +250,7 @@ When we are looking at continuous revenues, it appears that runtime does not exp
 
 By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
 
-# ADD plotly barchart with confidence interval
+<iframe id="image" src="assets/Mean_runtime_blockbuster.html" width="800" height="800" frameborder="0" position="relative">Scatter map</iframe>
 
 Despite having a low value of R-squared between movie runtime and revenue we were able to expose a significant difference in movie runtimes between block-busters and non block-busters. 
 This underlines the nuanced role that timing plays on a movies success. As Gandalf wisely said, "A wizard arrives precisely when he means to."
