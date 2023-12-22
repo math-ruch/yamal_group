@@ -236,7 +236,7 @@ Note however that as this analysis might give us good insights on the importance
 ## 6. Are longer movies more likely to be more successful or are they just more boring to watch?
 
 We often say that time is money, but how does this apply to the world of movies? 
-Movie runtime, measured in minutes is not simply the duration of a movie but also an element that can afect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between movie runtime and it's box office revenue in order to gage the influence of the movies runtime on it's success. So without wasting any time let us continue!
+Movie runtime, measured in minutes is not simply the duration of a movie but also an element that can affect the audience's interest and attention. As humans we dislike being under the impression that we are wasting our time, so this plays a big role in choosing how long a movie should be. In this part we will investigate the relationship between movie runtime and it's box office revenue in order to gage the influence of the movies runtime on it's success. So without wasting any time let us continue!
 
 Starting off by looking at the scatter plot of movie runtimes and the movie revenues we might expect to see a clear relationship, but sadly we do not. But all hope is not lost! We will delve deeper into the analysis using statistical testing and linear regressions. 
 
@@ -248,7 +248,7 @@ Analysing our results we find an R-squared value of 3.1%, meaning that movie run
 
 Looking at our scatterplot above we notice that most movies are between 80 and 130 minutes in length, so does this mean that there is no difference no difference of success in block-buster (movies that have a revenue of over 400$ million) and non block-buster movies?
 
-No! By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant.
+No! By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant due to the p-value being close to 0.
 
 Despite having a low value of R-squared between movie runtime and revenue we were able to expose a significant difference in movie runtimes between block-busters and non block-busters underlining the nuanced role of timing on a movies success. As Gandalf wisely said, "A wizard arrives precisely when he means to."
 
