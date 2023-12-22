@@ -78,7 +78,9 @@ But are those conclusions trustworthy? **No!** In the case of observational anal
  
 The same applies to budgets: it is obvious that if we consider the money generated as output, we must care about the money at the input i.e. the budget as the later has probably a big impact on the revenues. A movie with a higher budget will generally reach a bigger audience (higher budget means it will probably lead to a greater marketing, be translated into more languages, have better special effect...) and consequently generate a higher box office revenue.
 
-To get rid of this merciless enemy, we did some matching. In our analysis, we select for each genre the same number of movies with an emotional plot as with a non-emotional plot for question **1)**. For question **2)** we also select for each genre the same number of movies with positive emotional plot as with negative plot. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget. So, we match movies between the treatment and the control group whose diffence in budget is not more than 20% of the smallest budget between the two i.e. $\text{abs}(\text{budget movie}_1 - \text{budget movie}_2) < 0.2*min(\text{budget movie}_1, \text{budget movie}_2)$. To compare the box office revenues distributions, we performed t-test as before.
+To get rid of this merciless enemy, we did some matching. In our analysis, we select for each genre the same number of movies with an emotional plot as with a non-emotional plot for question **1)**. For question **2)** we also select for each genre the same number of movies with positive emotional plot as with negative plot. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget. So, we match movies between the treatment and the control group whose diffence in budget is not more than 20% of the smallest budget between the two i.e.:
+<iframe id="image" src="assets/equation.png" width="800px" height="40px" frameborder="0" position="relative">
+To compare the box office revenues distributions, we performed t-test as before.
 
 But what about the results of our analysis? Here they are:
 
