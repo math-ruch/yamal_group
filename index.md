@@ -250,6 +250,7 @@ Looking at our scatterplot above we notice that most movies are between 80 and 1
 
 No! By using a student test and doing exact matching on the genres to mitigate an important confounder in our results we find that the average runtime for block-buster movies is significantly higher than for non-blockbuster movies, and our result is statistically significant.
 
+Despite having a low value of R-squared between movie runtime and revenue we were able to expose a significant difference in movie runtimes between block-busters and non block-busters underlining the nuanced role of timing on a movies success. As Gandalf wisely said, "A wizard arrives precisely when he means to."
 
 -----------------
 
