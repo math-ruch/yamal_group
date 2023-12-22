@@ -41,60 +41,7 @@ By applying this formula to both the box office revenue and the production budge
 
 -----------------
 
-## 1. Explore the relationship between movie plot sentiment and movie success
-
-The last stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
-
-For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example with this wise quote from Frank the wizard:
-
-*"<span style="color:green">I got up in a good mood. I had a good night. I had an excellent breakfast.</span> <span style="color:red">Unfortunately, I realised that I'd have to do the washing-up afterwards.</span><span style="color:blue"> I would have liked to use a dishwasher"</span>*
-
-The first three sentences are labelled as positive because of their positive score assigned by our sentiment analyser. Therefore they are coloured in green. On the contrary, the forth sentence in red is labelled as negative by the analyser and the last one is considered as neutral. This is why they appear in red and blue, respectively.
-
-Then we classified plots as follows. All plots containing more than 50% sentences associated with a particular sentiment are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot will be considered negative. In the case of our previous example, the text would be labelled as positive because it contains three of positive sentences over five. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
-Let's look at the result of this processing by visualising the number of films with plots appearing in each of the emotional categories for different genres:
-
-<iframe id="image" src="assets/math_plot_count.html" width="750px" height="520px" frameborder="0" position="relative">Display plot counts</iframe>
-Now that the data is available, we can ask our research questions to address them:
-
-- **1)** Are films with emotional plots (positive or negative) more successful than films with neutral plots in terms of box office revenue?
-- **2)** Focusing on movies with emotional plot, what emotion (between positive and negative) in the plot makes the movie more successful?
-
-### Naive analysis
-
-A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would be the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
-
-<iframe id="image" src="assets/Math_naive_exp.html" width="750px" height="520px" frameborder="0" position="relative">Display naive exp</iframe>
-Looking at the plot above we observe that in both cases, the confidence intervals of box office revenues are not overlapping whether looking to the left bar plots for question **1)** or to the right bar plots for question **2)**. In addition, the p-values of t-test are the following: 
-
-- p-value = 0.0202 for question **1)** comparing mean box office revenues between emotional versus non-emotional plot
-- p-value = 9.18e-08 for question **2)** comparing mean box office revenues between positive and negative emotional plot
-
-So, in both cases the difference of mean box office revenues is statistically significant (at a significance level of 0.05) as both p-values are smaller than the significance level. For **1)**, if we look at the value of the t-statistic or simply observe the plot above, we can see that films with emotional plots have a higher average box office revenue than neutral plots! Thanks to the low p-value we can reject the fact that the mean box office revenues are the same for both categories. This is the same for question **2)**. As the p-value is below 0.05 we can conclude that the difference of mean box office revenues is statistically significant between movies with negative emotional plot and positive ones. Films with negative emotional plots have a higher average box office revenue than neutral plot.
-
-### Matched experience
-
-But are those conclusions trustworthy? **No!** In the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues as the two genres may not have similar distributions of revenues. 
- 
-The same applies to budgets: it is obvious that if we consider the money generated as output, we must care about the money at the input i.e. the budget as the later has probably a big impact on the revenues. A movie with a higher budget will generally reach a bigger audience (higher budget means it will probably lead to a greater marketing, be translated into more languages, have better special effect...) and consequently generate a higher box office revenue.
-
-To get rid of this merciless enemy, we did some matching. In our analysis, we select for each genre the same number of movies with an emotional plot as with a non-emotional plot for question **1)**. For question **2)** we also select for each genre the same number of movies with positive emotional plot as with negative plot. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget. So, we match movies between the treatment and the control group whose diffence in budget is not more than 20% of the smallest one i.e.:
-
-<img id="image" src="assets/equation.jpg" width="650px" height="30px" frameborder="0" position="relative">
-
-To compare the box office revenues distributions, we performed t-test as before.
-
-But what about the results of our analysis? Here they are:
-
-- For question **1)** on the link between box office income and plot emotionality (whether they are neutral or emotional) it turns out that, against all expectations, there is no statistically significant difference (significance level of 0.05) between the box office averages of the two categories! In fact, by performing a t-test between the two averages, we can see that the p-value (0.402) is above the significance threshold. We also observe in the figure below that the 95% confidence intervals overlap considerably. We might have expected the emotion ingredient in movie plots to contribute to the potion of success. But because of the low p-value, we cannot refute the hypothesis that the two averages are similar unlike the naive analysis told us.
-
-<iframe id="image" src="assets/Math_matched_exp1.html" width="750px" height="520px" frameborder="0" position="relative">Plot matched exp1</iframe>
-- Regarding question **2)**, if the plot is considered to be emotional, it turns out that this time we can reject the null hypothesis stating that the two sets of movies box office revenues have identical means (at a significance level of .05) as the p-value (0.0324) is below the significance level. Based on the t-statistic or on the plot below, we can say that the mean of box office revenues for movies with a negative emotional plot is higher. This is interesting to observe that films with negative emotional plot generally convey a greater success looking at the box office revenues. One would probably have thought that humans would be more sensitive to movies with positive emotional plot rather than negative emotional ones. *"The heart has its reasons which reason knows not."* to quote the famous french mathematician Blaise Pascal.
-<iframe id="image" src="assets/Math_matched_exp2_office.html" width="750px" height="520px" frameborder="0" position="relative">Plot matched exp2</iframe>
-
------------------
-
-## 2. Does the Period of Release of a Movie Have an Impact on Its Box Office Revenue?
+## 1. Does the Period of Release of a Movie Have an Impact on Its Box Office Revenue?
 
 In the spellbinding realm of cinema, where stories unfold and captivate audiences, the success of a film is often attributed to myriad factors, ranging from its narrative depth to the star power it wields. Yet, beyond these obvious charms lies a more subtle, often overlooked element that can significantly sway a film's journey to prosperity: its release period. The date a movie graces the silver screen might seem inconsequential at first glance, but our analysis delves deep into the temporal mysteries to uncover its potential impact on box office revenue.
 
@@ -155,8 +102,87 @@ In concluding our analysis, it's clear that the timing of a movie's release—sp
 
 -----------------
 
-## 3. What is the relationship between a movies' genre and its success?
+## 2. What is the relationship between a movies' genre and its success? Do Movie Genres Hold the Key to Success?
 
+Embarking on a meticulous analysis into the financial dynamics within cinematic genres, our exploration pivots to an initial analysis: the comparative of mean budgets and revenues across diverse movie genres. Do certain genres stand as exemplars of financial efficiency, strategically managing budgets while making substantial revenues, or do other genres showcase more extravagant budgets that yield commensurate returns? Utilizing a rigorous analytical lens, we delve into the financials, seeking answers within the cinematic genres. How do genres navigate the interplay between budget allocation and revenue generation? 
+
+<iframe src="assets/genre_budget_revenue_plot.html" width="800px" height="500px" frameborder="0" position="relative">Display Budget and Revenue for every genre</iframe>
+
+After meticulously analyzing the mean revenues and budgets across various cinematic genres, distinct patterns in financial performances come to light.
+
+Genres like Animation, Adventure, and Fantasy emerge as the frontrunners in generating substantial mean revenues, boasting impressive figures exceeding $100 million, indicative of their potential commercial strength. Conversely, genres like Drama, Western, Documentary, and Foreign genres reveal notably lower mean revenues, signaling potential challenges in garnering higher box office returns.
+
+In tandem with revenue analysis, a scrutiny of mean budgets across genres showcases similar insights. Adventure, Animation, and Family genres tend to exhibit higher mean budgets, signaling considerable investments in production. Conversely, genres like Horror, TV Movie, and Mystery demonstrate relatively lower mean budgets, suggesting potentially restrained financial backing in their production.
+
+However, amidst these revelations, a pivotal question arises: Should our assessment of movie success predominantly hinge on revenues alone, or should we delve deeper into net profit comparisons? The focus on net profit might present a more holistic view, considering that substantial revenues might not necessarily translate to profitability if excessive budgets have been allocated.
+
+<iframe src="assets/genre_net_profit_plot.html" width="800px" height="500px" frameborder="0" position="relative">Display net profit for every genre</iframe>
+
+
+We can observe that genres such as Animation, Adventure, Family, and Fantasy emerge as frontrunners, showcasing higher mean profits, exceeding $100 million in the box office. These genres manifest considerable success in garnering profitable returns, reflecting robust performances in terms of financial gains.
+
+Conversely, genres like Foreign, Western, Documentary, and History exhibit notably lower mean profits, signaling potential challenges in generating substantial financial gains in the box office. The lower figures suggest comparatively limited success in reaping profitable returns within these genres.
+
+However, Should our evaluation of movie success solely pivot on net profits, or should we pivot towards the evaluation of Return on Investment (ROI)? Examining ROI might offer a more comprehensive view, considering that higher net profits may not inherently signify superior financial performance if substantial initial investments haven't been factored in.
+
+<iframe src="assets/genre_roi_plot.html" width="800px" height="500px" frameborder="0" position="relative">Display ROI for every genre</iframe>
+
+Upon analyzing the Return on Investment (ROI) for various cinematic genres, compelling insights into their financial efficiency and profitability emerge. Genres such as Documentary, Horror, Music, Animation, and War stand out, boasting notably high ROIs, surpassing 300%. These genres showcase exceptionally efficient utilization of financial resources, demonstrating substantial returns in comparison to their initial investments.
+
+In contrast, genres like Crime, Action, and Foreign exhibit relatively lower ROIs, hovering around or below 220%. While these genres might generate profits, their ROI suggests that the returns might not proportionately align with the capital invested, potentially indicating less efficient financial performance.
+
+-----------------
+
+## 3. Explore the relationship between movie plot sentiment and movie success
+
+The last stage of our analysis will take us to a point that is crucial for humans and which therefore probably influences the success of movies. We have carried out a sentiment analysis of movie plots to explore the relationship between the emotions expressed in the plots and the success of the films in terms of box office revenue. We know that human beings are fond of feelings. This is one of the reasons why so many films in the drama genre are produced, because they express human interaction. Let's start by explaining in a few words how our NLP pipeline works. 
+
+For each film we tokenised its plot and labelled the sentences in the plot as being either positive, negative or neutral on the basis of an emotional score. Here's a small example with this wise quote from Frank the wizard:
+
+*"<span style="color:green">I got up in a good mood. I had a good night. I had an excellent breakfast.</span> <span style="color:red">Unfortunately, I realised that I'd have to do the washing-up afterwards.</span><span style="color:blue"> I would have liked to use a dishwasher"</span>*
+
+The first three sentences are labelled as positive because of their positive score assigned by our sentiment analyser. Therefore they are coloured in green. On the contrary, the forth sentence in red is labelled as negative by the analyser and the last one is considered as neutral. This is why they appear in red and blue, respectively.
+
+Then we classified plots as follows. All plots containing more than 50% sentences associated with a particular sentiment are labelled as belonging to that sentiment. For example, if more than 50% of the sentences of a plot are negative, the plot will be considered negative. In the case of our previous example, the text would be labelled as positive because it contains three of positive sentences over five. Movies with a proportion of sentiment of less than 50% in all categories are left out because they cannot be correctly labelled. 
+Let's look at the result of this processing by visualising the number of films with plots appearing in each of the emotional categories for different genres:
+
+<iframe id="image" src="assets/math_plot_count.html" width="750px" height="520px" frameborder="0" position="relative">Display plot counts</iframe>
+Now that the data is available, we can ask our research questions to address them:
+
+- **1)** Are films with emotional plots (positive or negative) more successful than films with neutral plots in terms of box office revenue?
+- **2)** Focusing on movies with emotional plot, what emotion (between positive and negative) in the plot makes the movie more successful?
+
+### Naive analysis
+
+A naive approach to answer our questions on the impact of sentiment in movie plots on box office revenues would be the following: we could simply compare the box office revenue averages for each plot category: emotional vs neutral and positive vs negative. This can be done using a t-test. Let's look at what this would give us:
+
+<iframe id="image" src="assets/Math_naive_exp.html" width="750px" height="520px" frameborder="0" position="relative">Display naive exp</iframe>
+Looking at the plot above we observe that in both cases, the confidence intervals of box office revenues are not overlapping whether looking to the left bar plots for question **1)** or to the right bar plots for question **2)**. In addition, the p-values of t-test are the following: 
+
+- p-value = 0.0202 for question **1)** comparing mean box office revenues between emotional versus non-emotional plot
+- p-value = 9.18e-08 for question **2)** comparing mean box office revenues between positive and negative emotional plot
+
+So, in both cases the difference of mean box office revenues is statistically significant (at a significance level of 0.05) as both p-values are smaller than the significance level. For **1)**, if we look at the value of the t-statistic or simply observe the plot above, we can see that films with emotional plots have a higher average box office revenue than neutral plots! Thanks to the low p-value we can reject the fact that the mean box office revenues are the same for both categories. This is the same for question **2)**. As the p-value is below 0.05 we can conclude that the difference of mean box office revenues is statistically significant between movies with negative emotional plot and positive ones. Films with negative emotional plots have a higher average box office revenue than neutral plot.
+
+### Matched experience
+
+But are those conclusions trustworthy? **No!** In the case of observational analyses, we have to take account of important factors in our data which can influence box office revenues by category in different ways! These are the terrible confounders... In our analyses  we consider that the genre of a movie might have an effect on whether the plot is sentimental or not. For example, we would expect to have a higher number of emotional plots for drama and maybe only a few emotional plots for action movies. This may impact our analysis on box office revenues as the two genres may not have similar distributions of revenues. 
+ 
+The same applies to budgets: it is obvious that if we consider the money generated as output, we must care about the money at the input i.e. the budget as the later has probably a big impact on the revenues. A movie with a higher budget will generally reach a bigger audience (higher budget means it will probably lead to a greater marketing, be translated into more languages, have better special effect...) and consequently generate a higher box office revenue.
+
+To get rid of this merciless enemy, we did some matching. In our analysis, we select for each genre the same number of movies with an emotional plot as with a non-emotional plot for question **1)**. For question **2)** we also select for each genre the same number of movies with positive emotional plot as with negative plot. To match the dataset on budgets, it is very unlikely that two movies have the exact same budget. So, we match movies between the treatment and the control group whose diffence in budget is not more than 20% of the smallest one i.e.:
+
+<img id="image" src="assets/equation.jpg" width="650px" height="30px" frameborder="0" position="relative">
+
+To compare the box office revenues distributions, we performed t-test as before.
+
+But what about the results of our analysis? Here they are:
+
+- For question **1)** on the link between box office income and plot emotionality (whether they are neutral or emotional) it turns out that, against all expectations, there is no statistically significant difference (significance level of 0.05) between the box office averages of the two categories! In fact, by performing a t-test between the two averages, we can see that the p-value (0.402) is above the significance threshold. We also observe in the figure below that the 95% confidence intervals overlap considerably. We might have expected the emotion ingredient in movie plots to contribute to the potion of success. But because of the low p-value, we cannot refute the hypothesis that the two averages are similar unlike the naive analysis told us.
+
+<iframe id="image" src="assets/Math_matched_exp1.html" width="750px" height="520px" frameborder="0" position="relative">Plot matched exp1</iframe>
+- Regarding question **2)**, if the plot is considered to be emotional, it turns out that this time we can reject the null hypothesis stating that the two sets of movies box office revenues have identical means (at a significance level of .05) as the p-value (0.0324) is below the significance level. Based on the t-statistic or on the plot below, we can say that the mean of box office revenues for movies with a negative emotional plot is higher. This is interesting to observe that films with negative emotional plot generally convey a greater success looking at the box office revenues. One would probably have thought that humans would be more sensitive to movies with positive emotional plot rather than negative emotional ones. *"The heart has its reasons which reason knows not."* to quote the famous french mathematician Blaise Pascal.
+<iframe id="image" src="assets/Math_matched_exp2_office.html" width="750px" height="520px" frameborder="0" position="relative">Plot matched exp2</iframe>
 
 -----------------
 
